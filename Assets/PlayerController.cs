@@ -9,42 +9,62 @@ public class PlayerController : MonoBehaviour
     public BoxCollider2D Groundcheck;
     public LayerMask GroundMask;
     public float Speed = 5f;
-    public float drag;
+    [Range(0f, 1f)]
+    public float groundDecay;
     public bool grounded;
 
     public float JumpHight = 5f;
-   
+
+    private float moveX;
+    private float moveY;
 
     // Update is called once per frame
     void Update()
     {
-        float moveX = Input.GetAxis("Horizontal");
-        float moveY = Input.GetAxis("Vertical");
-
-       if (Mathf.Abs(moveX) > 0){
-            rb.linearVelocity = new Vector2(moveX*Speed,rb.linearVelocity.y);
-        }
-
-        if (Mathf.Abs(moveY) > 0){
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, moveY*Speed);
-        }
-
-
+        GetInput();
+        applyMovement();
     }
-
+    
     private void FixedUpdate()
     {
         CheckGround();
-
-        if (grounded)
-        {
-            rb.linearVelocity *= drag;
-        }
-        
+        ApplyGrounded();
     }
 
+    // get inputs (old unity system)
+    void GetInput()
+    {
+         // move around using old unity axis system
+         moveX = Input.GetAxis("Horizontal");
+         moveY = Input.GetAxis("Vertical");
+    }
+
+    // apply movement
+    void applyMovement()
+    {
+        if (Mathf.Abs(moveX) > 0){
+            rb.linearVelocity = new Vector2(moveX*Speed,rb.linearVelocity.y);// this is to make it so it only changes the x axis and leaves the y axis if it is unchanged
+        }
+
+        if (Mathf.Abs(moveY) > 0 && grounded){
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, moveY*Speed);
+        }
+
+    }
+    
+    // checks if touching ground layer
     void CheckGround()
     {
         grounded = Physics2D.OverlapAreaAll(Groundcheck.bounds.min, Groundcheck.bounds.max, GroundMask).Length > 0;
+    }
+
+    // if touching ground layer then slow over time
+    void ApplyGrounded()
+    {
+        if (grounded)
+        {
+            rb.linearVelocity *= groundDecay;// checks if player is in contact with ground layer if they are they will get drag(slowdown over time)
+        }
+
     }
 }
