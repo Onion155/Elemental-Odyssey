@@ -7,16 +7,16 @@ public class GateControler : MonoBehaviour
     public Rigidbody2D Player; // player who will be tpd
     public BoxCollider2D GateToo; // gate it will tp to
 
-    private float spawnlocation = 0f;
+    private float spawnlocation = 0.5f;
     public bool rightside;
    
 
     private void Start()
     {
-        //if (rightside)
-        //{
-         //   spawnlocation = -spawnlocation;
-        //}
+        if (rightside)
+        {
+            spawnlocation = -spawnlocation;
+        }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
