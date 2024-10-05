@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
-
     public Rigidbody2D Body;
     public BoxCollider2D Groundcheck;
     public LayerMask GroundMask;
