@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
     // if touching ground layer then slow over time
     void ApplyFriction()
     {
-        if (grounded && moveX == 0 && moveY == 0)
+        if (grounded && moveX == 0 && Body.linearVelocity.y <= 0)
         {
             Body.linearVelocity *= groundDecay;// checks if player is in contact with ground layer if they are they will get drag(slowdown over time)
         }
