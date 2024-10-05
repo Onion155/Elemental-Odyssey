@@ -1,13 +1,25 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GateControler : MonoBehaviour
 {
-    public Rigidbody2D Player;
-    public BoxCollider2D GateToo;
-    public float spawnlocation;
+    // referances 
+    public Rigidbody2D Player; // player who will be tpd
+    public BoxCollider2D GateToo; // gate it will tp to
+
+    private float spawnlocation = 0f;
+    public bool rightside;
+   
+
+    private void Start()
+    {
+        //if (rightside)
+        //{
+         //   spawnlocation = -spawnlocation;
+        //}
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        //Debug.Log(gameObject.name + " was entered by "+ collision.gameObject.name);
         Player.transform.position = new Vector2(GateToo.transform.position.x + spawnlocation, GateToo.transform.position.y);
     }
 
