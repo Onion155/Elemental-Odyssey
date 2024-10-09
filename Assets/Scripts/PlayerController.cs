@@ -7,10 +7,11 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D Body;
     public BoxCollider2D Groundcheck;
     public LayerMask GroundMask;
-   
+
+
     [Range(0f, 1f)] 
     public float groundDecay = 0.89f;
-    public bool grounded;
+    private bool grounded;
     public float groundSpeed = 5f;
     public float jumpSpeed;
 
