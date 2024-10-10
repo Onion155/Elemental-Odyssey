@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     [Range(0f, 1f)] 
     public float groundDecay = 0.89f;
     public bool grounded;
-    public bool slowed;
+    public bool slowed; // this will slow them down and prevent them from jumping
     public float groundSpeed = 5f;
     public float jumpSpeed;
 
@@ -69,13 +69,13 @@ public class PlayerController : MonoBehaviour
     void ApplyFriction()
     {
         // slows the player
-       if (slowed && moveX == 0 && Body.linearVelocity.y <= 0)
+       if (slowed && Body.linearVelocity.y <= 0)
         {
             groundSpeed = 2f;
             Body.linearVelocity *= groundDecay;// checks if player is in contact with ground layer if they are they will get drag(slowdown over time)
         }
         // this applys friction 
-        else if (grounded && moveX == 0 && Body.linearVelocity.y <= 0)
+        else if (grounded && Body.linearVelocity.y <= 0)
         {
             groundSpeed = 5f;
             Body.linearVelocity *= groundDecay;// checks if player is in contact with ground layer if they are they will get drag(slowdown over time)
