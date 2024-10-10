@@ -2,20 +2,32 @@ using UnityEngine;
 
 public class CharacterStatBase : MonoBehaviour
 {
-    // character health
-    [Range(1f, 100f)]
-    public float health;
+    public int MaxHeath = 100;
+    public int CurrentHeath = 100;
 
-    // damage multiplyer
-    [Range(0f, 100f)]
-    public float damage;
-
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        if (health <= 0)
+        CurrentHeath = MaxHeath;
+    }
+
+    public void TakeDamage(int amount)
+    {
+        CurrentHeath -= amount;
+
+        if (CurrentHeath <= 0)
         {
-            Debug.Log(this.gameObject + "Has died");
+            CurrentHeath = 0;
+            Debug.Log("you died");
+        }
+    }
+
+    public void Heal(int amount)
+    {
+        CurrentHeath += amount;
+
+        if (CurrentHeath < MaxHeath)
+        {
+            CurrentHeath = MaxHeath;
         }
     }
 }

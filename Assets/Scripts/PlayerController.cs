@@ -7,11 +7,13 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D Body;
     public BoxCollider2D Groundcheck;
     public LayerMask GroundMask;
+    public LayerMask SlowedMask;
 
 
     [Range(0f, 1f)] 
     public float groundDecay = 0.89f;
-    private bool grounded;
+    public bool grounded;
+    public bool slowed;
     public float groundSpeed = 5f;
     public float jumpSpeed;
 
@@ -60,15 +62,25 @@ public class PlayerController : MonoBehaviour
     void CheckGround()
     {
         grounded = Physics2D.OverlapAreaAll(Groundcheck.bounds.min, Groundcheck.bounds.max, GroundMask).Length > 0;
+        slowed = Physics2D.OverlapAreaAll(Groundcheck.bounds.min, Groundcheck.bounds.max, SlowedMask).Length > 0;
     }
 
     // if touching ground layer then slow over time
     void ApplyFriction()
     {
-        if (grounded && moveX == 0 && Body.linearVelocity.y <= 0)
+        // slows the player
+       if (slowed && moveX == 0 && Body.linearVelocity.y <= 0)
         {
+            groundSpeed = 2f;
             Body.linearVelocity *= groundDecay;// checks if player is in contact with ground layer if they are they will get drag(slowdown over time)
         }
+        // this applys friction 
+        else if (grounded && moveX == 0 && Body.linearVelocity.y <= 0)
+        {
+            groundSpeed = 5f;
+            Body.linearVelocity *= groundDecay;// checks if player is in contact with ground layer if they are they will get drag(slowdown over time)
+        }
+        
 
     }
 }
