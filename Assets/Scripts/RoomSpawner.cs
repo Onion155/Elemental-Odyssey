@@ -12,6 +12,7 @@ public class RoomSpawner : MonoBehaviour
 
     private Transform parentObject;
     private RoomTemplates templates;
+    private GameObject newObject;
     private int rand;
     private bool spawned = false;
 
@@ -37,28 +38,28 @@ public class RoomSpawner : MonoBehaviour
             {
                 // spawn room with top door
                 rand = Random.Range(0, templates.topRooms.Length);
-                GameObject newObject = Instantiate(templates.topRooms[rand], transform.position + fixdown, templates.topRooms[rand].transform.rotation);
+                newObject = Instantiate(templates.topRooms[rand], transform.position , templates.topRooms[rand].transform.rotation); //+fixdown
                 newObject.transform.SetParent(parentObject);
             }
             else if (openingDirection == 2)
             {
                 //spawn room with bottom door
                 rand = Random.Range(0, templates.bottomRooms.Length);
-                GameObject newObject = Instantiate(templates.bottomRooms[rand], transform.position + fixup, templates.bottomRooms[rand].transform.rotation);
+                newObject =  Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation);//+ fixup
                 newObject.transform.SetParent(parentObject);
             }
             else if (openingDirection == 3)
             {
                 // spawn room with right door
                 rand = Random.Range(0, templates.rightRooms.Length);
-                GameObject newObject = Instantiate(templates.rightRooms[rand], transform.position + fixleft, templates.rightRooms[rand].transform.rotation);
+                newObject = Instantiate(templates.rightRooms[rand], transform.position , templates.rightRooms[rand].transform.rotation);//+ fixleft
                 newObject.transform.SetParent(parentObject);
             }
             else if (openingDirection == 4)
             {
                 //spawn room with left door
                 rand = Random.Range(0, templates.leftRooms.Length);
-                GameObject newObject = Instantiate(templates.leftRooms[rand], transform.position + fixright, templates.leftRooms[rand].transform.rotation);
+                newObject = Instantiate(templates.leftRooms[rand], transform.position , templates.leftRooms[rand].transform.rotation);//+ fixright
                 newObject.transform.SetParent(parentObject);
             }
             spawned = true;
@@ -66,9 +67,17 @@ public class RoomSpawner : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("SpawnPoint")&& collision.GetComponent<RoomSpawner>().spawned == true)
+        if(collision.CompareTag("SpawnPoint"))
         {
-            Destroy(this.gameObject);
+            if (collision.GetComponent<RoomSpawner>().spawned == false && spawned == false)
+            {
+                newObject = Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
+                newObject.transform.SetParent(parentObject);
+
+                Destroy(this.gameObject);
+                Debug.Log("Destroyed " + this.gameObject.name);
+            }
+            spawned = true;
         }
     }
 }
