@@ -16,10 +16,12 @@ public class RoomSpawner : MonoBehaviour
     private int rand;
     private bool spawned = false;
 
+    // this is redundent i can remove it 
     private Vector3 fixdown = new Vector3(-6f, -7.5f, 0f);
     private Vector3 fixup = new Vector3(-6f, 5.5f, 0);
     private Vector3 fixright = new Vector3(5.5f,-1f, 0f);
     private Vector3 fixleft = new Vector3(-17.5f, -1f, 0f);
+    //
 
     // this needs to be optimised its going to affect my game if it has to search all the objects to find these tags
     private void Start()

@@ -1,9 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 
 public class CharacterBase : MonoBehaviour
 {
-    public CharacterStatBase stats;
+    public CharacterStatBase Playerstats;
 
     public int Damage;
 
@@ -15,8 +16,8 @@ public class CharacterBase : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        stats.TakeDamage(Damage);
-        Debug.Log("The player has "+ stats.CurrentHeath + " health left");
+       Playerstats.TakeDamage(Damage);
+        Debug.Log(gameObject.name + " has dealth damage-" + Playerstats.name + " has " + Playerstats.CurrentHeath + " health left");
     }
 
     // Update is called once per frame

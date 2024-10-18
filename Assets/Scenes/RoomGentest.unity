@@ -527,7 +527,7 @@ MonoBehaviour:
   - {fileID: 7598145891864465843, guid: d5f77ae60b6165343b1604d85d5d99a3, type: 3}
   - {fileID: 7598145891864465843, guid: 9e57103b5bbf8e44c8b5b44b1d50b2fa, type: 3}
   - {fileID: 7598145891864465843, guid: 0afab65a78d88054d8549b5435a674f0, type: 3}
-  - {fileID: 5242149792714179512, guid: 5f41e0004dd51f74e8913bd80a81c224, type: 3}
+  - {fileID: 7598145891864465843, guid: bc6caa56a3bd30d4bb097c34321c52b2, type: 3}
   closedRoom: {fileID: 7598145891864465843, guid: b90e91b2d6f84014b83568cb1fe2c803, type: 3}
 --- !u!4 &1148112227
 Transform:

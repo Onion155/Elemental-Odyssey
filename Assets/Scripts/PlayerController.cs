@@ -9,13 +9,15 @@ public class PlayerController : MonoBehaviour
     public LayerMask GroundMask;
     public LayerMask SlowedMask;
 
+    public Transform WaterBullet; // this is the  projectile the player will spawn
+    public float BulletDirection;
 
-    [Range(0f, 1f)] 
-    public float groundDecay = 0.89f;
-    public bool grounded;
-    public bool slowed; // this will slow them down and prevent them from jumping
-    public float groundSpeed = 5f;
-    public float jumpSpeed;
+ 
+    private float groundDecay = 0.712f;// slowing effect for smooth movement
+    private bool grounded; // touching ground is true
+    private bool slowed; // this will slow them down and prevent them from jumping
+    private float groundSpeed = 5f; // how fast the player can move
+    private float jumpSpeed = 10f; // fast the player jumps
 
     private float moveX;
     private float moveY;
@@ -39,6 +41,12 @@ public class PlayerController : MonoBehaviour
          // move around using old unity axis system
          moveX = Input.GetAxis("Horizontal");
          moveY = Input.GetAxis("Vertical");
+
+        if(Input.GetKeyDown(KeyCode.Q))// creates a WaterBullet
+        {
+            Instantiate(WaterBullet, transform.position, Quaternion.identity);
+        }
+
     }
 
     // apply movement
@@ -50,6 +58,7 @@ public class PlayerController : MonoBehaviour
             // make the player face direction its moving
             float direction = Mathf.Sign(moveX);
             transform.localScale = new Vector3(direction, 1, 1);
+            BulletDirection = direction; // sends the direction over to the bullet
         }
 
         if (Input.GetButton("Jump") && grounded){

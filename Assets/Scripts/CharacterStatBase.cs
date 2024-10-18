@@ -4,6 +4,7 @@ public class CharacterStatBase : MonoBehaviour
 {
     public int MaxHeath = 100;
     public int CurrentHeath = 100;
+    public int defenece = 0;
 
     private void Start()
     {
@@ -12,12 +13,13 @@ public class CharacterStatBase : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        amount -= defenece;
         CurrentHeath -= amount;
 
         if (CurrentHeath <= 0)
         {
             CurrentHeath = 0;
-            Debug.Log("you died");
+            Debug.Log(gameObject.name +  " died");
         }
     }
 

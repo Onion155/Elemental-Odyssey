@@ -670,6 +670,7 @@ GameObject:
   - component: {fileID: 368741485}
   - component: {fileID: 368741484}
   - component: {fileID: 368741483}
+  - component: {fileID: 368741487}
   m_Layer: 8
   m_Name: Target Dummy
   m_TagString: Untagged
@@ -790,7 +791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f0753f22710724ea97f09c4281b148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 2031066815}
+  Playerstats: {fileID: 2031066815}
   Damage: 10
 --- !u!4 &368741486
 Transform:
@@ -807,6 +808,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &368741487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368741482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b03e8bbb07516143a243a72c27d369e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHeath: 100
+  CurrentHeath: 100
+  defenece: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6792,7 +6808,7 @@ GameObject:
   - component: {fileID: 2031066815}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6916,11 +6932,8 @@ MonoBehaviour:
   SlowedMask:
     serializedVersion: 2
     m_Bits: 512
-  groundDecay: 0.712
-  grounded: 0
-  slowed: 0
-  groundSpeed: 5
-  jumpSpeed: 10
+  WaterBullet: {fileID: 1473554907566372038, guid: f61211918d8f05d458fdbf8c9cac72d7, type: 3}
+  BulletDirection: 0
 --- !u!61 &2031066814
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6981,6 +6994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHeath: 100
   CurrentHeath: 100
+  defenece: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
