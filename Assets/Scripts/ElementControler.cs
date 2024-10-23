@@ -1,28 +1,22 @@
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 public class ElementControler : MonoBehaviour
 {
-
     public Rigidbody2D rb;
-    private PlayerController Player;
-    public float lifespan = 100;
+    private float lifespan = 100;
     private float ProjectileSpeed = 5;
 
-    private void Awake() // this needs to be changed so the bullet goes towards the mouse and not the player direaction
-    {
-        //Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        //transform.localScale = new Vector3(Player.BulletDirection, 1, 1);
-        //ProjectileSpeed *= Player.BulletDirection;
-        // Convert to world coordinates
-        // Retrieve mouse position in screen coordinates
 
-        // this tells the game cowardantes of the mouse using the above values
-        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
+    private void Awake()
+    {
+        // needs to spawn where the player is standing and then it needs to go towards the mouse( the mouse coards at the time of being made)
+        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane)); // tells us where the mouse is 
         Debug.Log("Mouse World Position: " + mouseWorldPosition);
     }
-
     private void FixedUpdate()
     {
+        // deletes the object after a little while
         if (lifespan >= 0)
         {
             rb.linearVelocityX = ProjectileSpeed;
@@ -46,5 +40,29 @@ public class ElementControler : MonoBehaviour
             Debug.Log("hit something");
             Destroy(this.gameObject);
         }
+    }
+
+    public float GetLifespan()
+    {
+        return lifespan;
+    }
+    public float SetLifespan(float a)
+    {
+        return (lifespan = a);
+    }
+
+    public float GetProjSpeed()
+    {
+        return ProjectileSpeed;
+    }
+
+    public void CreateObject(Rigidbody2D body)
+    {
+        Instantiate(this.gameObject, body.transform.position,Quaternion.identity);
+    }
+
+    public void DestroyObject()
+    {
+        Destroy(this);
     }
 }

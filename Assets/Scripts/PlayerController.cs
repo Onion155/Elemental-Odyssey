@@ -42,11 +42,6 @@ public class PlayerController : MonoBehaviour
          moveX = Input.GetAxis("Horizontal");
          moveY = Input.GetAxis("Vertical");
 
-        if(Input.GetKeyDown(KeyCode.Q))// creates a WaterBullet
-        {
-            Instantiate(WaterBullet, transform.position, Quaternion.identity);
-        }
-
     }
 
     // apply movement

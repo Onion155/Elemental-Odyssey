@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 9026759032009441560}
+  lifespan: 100
 --- !u!50 &9026759032009441560
 Rigidbody2D:
   serializedVersion: 5
