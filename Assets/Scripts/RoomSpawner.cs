@@ -71,8 +71,8 @@ public class RoomSpawner : MonoBehaviour
                 newObject = Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
                 newObject.transform.SetParent(parentObject);
 
-                Destroy(gameObject);
-                Debug.Log("Destroyed " + gameObject.name);
+                Destroy(this.gameObject);
+                Debug.Log("Destroyed " + this.gameObject.name);
             }
             spawned = true;
         }
