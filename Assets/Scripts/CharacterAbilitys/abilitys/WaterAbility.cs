@@ -21,7 +21,7 @@ public class WaterAbility : PlayerAbilityBaseState
         if (Input.GetKeyDown(KeyCode.Q))
         {
 
-            ability.element.CreateObject(ability.Body);
+            ability.element.CreateObject();
             // when the player presses q it should shoot a bullet
         }
         if (Input.GetKeyDown(KeyCode.E))

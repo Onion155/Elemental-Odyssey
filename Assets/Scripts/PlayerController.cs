@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     private float moveX;
     private float moveY;
 
+    Vector2 freezpoz;
+    bool holdinplace;
+
     // Update is called once per frame
     void Update()
     {
@@ -87,4 +90,6 @@ public class PlayerController : MonoBehaviour
         
 
     }
+
+
 }

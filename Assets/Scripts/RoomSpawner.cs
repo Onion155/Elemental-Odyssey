@@ -13,24 +13,19 @@ public class RoomSpawner : MonoBehaviour
     private Transform parentObject;
     private RoomTemplates templates;
     private GameObject newObject;
+
     private int rand;
     private bool spawned = false;
-
-    // this is redundent i can remove it 
-    private Vector3 fixdown = new Vector3(-6f, -7.5f, 0f);
-    private Vector3 fixup = new Vector3(-6f, 5.5f, 0);
-    private Vector3 fixright = new Vector3(5.5f,-1f, 0f);
-    private Vector3 fixleft = new Vector3(-17.5f, -1f, 0f);
-    //
+    public float waitTime = 4f;
 
     // this needs to be optimised its going to affect my game if it has to search all the objects to find these tags
     private void Start()
     {
+        Destroy(gameObject, waitTime); // destroys the unneccasary nodes once they have been used 
+
       templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
       parentObject = GameObject.FindGameObjectWithTag("RoomSeed").GetComponent<Transform>(); // this is a referance to the grid 
-        Invoke("Spawn", 1f);
-
-        
+        Invoke("Spawn", 0.1f);
     }
     private void Spawn()
     {
@@ -76,8 +71,8 @@ public class RoomSpawner : MonoBehaviour
                 newObject = Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
                 newObject.transform.SetParent(parentObject);
 
-                Destroy(this.gameObject);
-                Debug.Log("Destroyed " + this.gameObject.name);
+                Destroy(gameObject);
+                Debug.Log("Destroyed " + gameObject.name);
             }
             spawned = true;
         }

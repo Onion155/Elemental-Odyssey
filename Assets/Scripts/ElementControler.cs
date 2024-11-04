@@ -1,30 +1,35 @@
 using Unity.Collections.LowLevel.Unsafe;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class ElementControler : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
+
+    public Transform firePoint;
+    public GameObject Projecttile;
+
+
     private float lifespan = 100;
-    private float ProjectileSpeed = 5;
+    public float ProjectileSpeed = 5;
 
-
-    private void Awake()
+    private void Start()
     {
-        // needs to spawn where the player is standing and then it needs to go towards the mouse( the mouse coards at the time of being made)
-        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane)); // tells us where the mouse is 
-        Debug.Log("Mouse World Position: " + mouseWorldPosition);
+      rb = GetComponent<Rigidbody2D>();
+
+      rb.linearVelocity = transform.right * ProjectileSpeed;
     }
+
     private void FixedUpdate()
     {
         // deletes the object after a little while
         if (lifespan >= 0)
         {
-            rb.linearVelocityX = ProjectileSpeed;
             lifespan -= 1;
         }
         else if (lifespan <= 0)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         
     }
@@ -38,7 +43,7 @@ public class ElementControler : MonoBehaviour
         else // this destroys the bullet if it hits something other than the enemy
         {
             Debug.Log("hit something");
-            Destroy(this.gameObject);
+           // Destroy(this.gameObject);
         }
     }
 
@@ -56,12 +61,12 @@ public class ElementControler : MonoBehaviour
         return ProjectileSpeed;
     }
 
-    public void CreateObject(Rigidbody2D body)
+    public void CreateObject()// creates object
     {
-        Instantiate(this.gameObject, body.transform.position,Quaternion.identity);
+        // creates the object, spawns it on the body and faces the mouse direction
+        Instantiate(Projecttile, firePoint.position, Quaternion.identity);
     }
-
-    public void DestroyObject()
+    public void DestroyObject()// destroy object
     {
         Destroy(this);
     }

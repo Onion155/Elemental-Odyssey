@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1473554907566372038}
   - component: {fileID: 6311156024859582514}
   - component: {fileID: 8889816217370432470}
-  - component: {fileID: 2370943410221645734}
   - component: {fileID: 9026759032009441560}
   m_Layer: 0
   m_Name: WaterBullet
@@ -136,20 +135,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2370943410221645734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7702693508131301136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 722ac5919fa325c45bc72bd0639b0e1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 9026759032009441560}
-  lifespan: 100
 --- !u!50 &9026759032009441560
 Rigidbody2D:
   serializedVersion: 5
@@ -165,7 +150,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
