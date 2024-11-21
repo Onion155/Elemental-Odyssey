@@ -42,7 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -118,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &281034667 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4360474339285506593, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
-  m_PrefabInstance: {fileID: 722607432}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &366569826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -280,7 +276,7 @@ PrefabInstance:
     - target: {fileID: 272517018975586910, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
       propertyPath: element
       value: 
-      objectReference: {fileID: 2141129040}
+      objectReference: {fileID: 0}
     - target: {fileID: 3896001230777534722, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
       propertyPath: m_LocalScale.x
       value: 8.14
@@ -540,7 +536,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2141129041}
-  - component: {fileID: 2141129040}
   m_Layer: 0
   m_Name: Elementalcontroller
   m_TagString: Untagged
@@ -548,21 +543,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2141129040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141129039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 722ac5919fa325c45bc72bd0639b0e1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {fileID: 281034667}
-  Projecttile: {fileID: 7702693508131301136, guid: f61211918d8f05d458fdbf8c9cac72d7, type: 3}
-  ProjectileSpeed: 5
 --- !u!4 &2141129041
 Transform:
   m_ObjectHideFlags: 0

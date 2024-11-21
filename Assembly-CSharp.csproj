@@ -61,22 +61,28 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.22f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\RoomTemplates.cs" />
-    <Compile Include="Assets\Scripts\CharacterAbilitys\abilitys\FireAbility.cs" />
-    <Compile Include="Assets\Scripts\GateControler.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\CharacterAbilitys\PlayerAbilityBaseState.cs" />
-    <Compile Include="Assets\Scripts\PlayerInputActions.cs" />
-    <Compile Include="Assets\Scripts\CharacterBase.cs" />
-    <Compile Include="Assets\Scripts\Destroyer.cs" />
-    <Compile Include="Assets\Scripts\CharacterAbilitys\abilitys\WaterAbility.cs" />
-    <Compile Include="Assets\Scripts\CharacterStatBase.cs" />
-    <Compile Include="Assets\Scripts\RoomSpawner.cs" />
-    <Compile Include="Assets\Scripts\CharacterAbilitys\abilitys\AirAbility.cs" />
-    <Compile Include="Assets\Scripts\CharacterAbilitys\PlayerAbilityStateManager.cs" />
-    <Compile Include="Assets\Scripts\CharacterAbilitys\abilitys\PhysicalAbility.cs" />
-    <Compile Include="Assets\Scripts\ElementControler.cs" />
-    <Compile Include="Assets\Scripts\CharacterAbilitys\abilitys\EarthAbility.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\RoomStuff\RoomTemplates.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\Interfaces\ITriggerCheckable.cs" />
+    <Compile Include="Assets\Scripts\RoomStuff\RoomSpawner.cs" />
+    <Compile Include="Assets\Scripts\RoomStuff\Destroyer.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\StateMachine\ConcreteStates\EnemyAttackState.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\Interfaces\IEnemyMovable.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\StateMachine\EnemyStateMachine.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\TriggerChecks\EnemyAttackDistanceCheck.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyTypes\Ghost.cs" />
+    <Compile Include="Assets\GameManagerScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\CharacterStatBase.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\CharacterBase.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\Base\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\Interfaces\IDamageAble.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\TriggerChecks\EnemyAggroCheck.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\StateMachine\EnemyState.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\PlayerInputActions.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\StateMachine\ConcreteStates\EnemyChaseState.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\GateControler.cs" />
+    <Compile Include="Assets\EnemieList.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\StateMachine\ConcreteStates\EnemyIdleState.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
