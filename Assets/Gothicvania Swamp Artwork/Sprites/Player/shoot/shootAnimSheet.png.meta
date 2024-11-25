@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shootAnimSheet_0: 4724940671216114467
+      shootAnimSheet_1: 5933693596992074434
+      shootAnimSheet_2: 8865278704897565317
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4,6 +4,7 @@ public class EnemyIdleState : EnemyState
 {
     private Vector3 _targetPos;
     private Vector3 _direction;
+    private Vector3 _RandomPos;
 
     public EnemyIdleState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
     {
@@ -52,7 +53,16 @@ public class EnemyIdleState : EnemyState
 
    private Vector3 GetRandomePointInCircle() // finds a random point in the circle 
     {
-        return enemy.transform.position + new Vector3(UnityEngine.Random.insideUnitCircle.x,0,0) * enemy.RandomMovementRange;
+        
+        if(enemy.IsFlyingCreature)
+        {
+            _RandomPos = enemy.transform.position + (Vector3)UnityEngine.Random.insideUnitCircle * enemy.RandomMovementRange;
+        }
+        else
+        {
+            _RandomPos = enemy.transform.position + new Vector3(UnityEngine.Random.insideUnitCircle.x, 0, 0) * enemy.RandomMovementRange;
+        }
+        return _RandomPos;
     }
 
 

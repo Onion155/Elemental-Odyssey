@@ -813,6 +813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <MaxHealth>k__BackingField: 100
+  IsFlyingCreature: 0
   RandomMovementRange: 5
   RandomeMovementSpeed: 1
 --- !u!1 &544121334

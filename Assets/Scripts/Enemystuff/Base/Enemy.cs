@@ -11,6 +11,9 @@ public class Enemy : MonoBehaviour, IDamageAble, IEnemyMovable, ITriggerCheckabl
     [field: SerializeField] public float MaxHealth { get; set; } = 100f; // the filed serialzed is there so you can look at it from the unity window like it was public (but you wont be able to change it as if it was private
     public float CurrentHealth { get; set; }
 
+    // is flying creature
+    public bool IsFlyingCreature;
+
     // movemment , facing
     public Rigidbody2D Rb { get; set; }
     public bool IsFacingRight { get; set; } = false; // all enemies should start by facingf left 
