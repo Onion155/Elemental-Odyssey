@@ -78,7 +78,6 @@
     <Compile Include="Assets\Scripts\Enemystuff\Interfaces\IDamageAble.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\TriggerChecks\EnemyAggroCheck.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\StateMachine\EnemyState.cs" />
-    <Compile Include="Assets\Scripts\PlayerStuff\PlayerInputActions.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\StateMachine\ConcreteStates\EnemyChaseState.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\GateControler.cs" />
     <Compile Include="Assets\EnemieList.cs" />
