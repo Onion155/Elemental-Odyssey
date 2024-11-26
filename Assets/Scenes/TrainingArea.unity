@@ -625,6 +625,7 @@ GameObject:
   - component: {fileID: 368741488}
   - component: {fileID: 368741489}
   - component: {fileID: 368741490}
+  - component: {fileID: 368741491}
   m_Layer: 8
   m_Name: Target Dummy
   m_TagString: Untagged
@@ -783,6 +784,28 @@ MonoBehaviour:
   IsFlyingCreature: 0
   RandomMovementRange: 5
   RandomeMovementSpeed: 1
+--- !u!95 &368741491
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368741482}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be61f4e4462cebf4ea0f9c313204c665, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &552924169
 GameObject:
   m_ObjectHideFlags: 0
