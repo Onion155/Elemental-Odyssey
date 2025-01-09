@@ -355,8 +355,6 @@ MonoBehaviour:
   SlowedMask:
     serializedVersion: 2
     m_Bits: 512
-  WaterBullet: {fileID: 1473554907566372038, guid: f61211918d8f05d458fdbf8c9cac72d7, type: 3}
-  BulletDirection: 0
 --- !u!114 &99965466849652664
 MonoBehaviour:
   m_ObjectHideFlags: 0

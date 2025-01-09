@@ -8,10 +8,6 @@ public class PlayerController : MonoBehaviour
     public BoxCollider2D Groundcheck;
     public LayerMask GroundMask;
     public LayerMask SlowedMask;
-
-    public Transform WaterBullet; // this is the  projectile the player will spawn
-    public float BulletDirection;
-
  
     private float groundDecay = 0.712f;// slowing effect for smooth movement
     private bool grounded; // touching ground is true
@@ -22,8 +18,11 @@ public class PlayerController : MonoBehaviour
     private float moveX;
     private float moveY;
 
+
     Vector2 freezpoz;
     bool holdinplace;
+
+   
 
     // Update is called once per frame
     void Update()
@@ -55,8 +54,7 @@ public class PlayerController : MonoBehaviour
 
             // make the player face direction its moving
             float direction = Mathf.Sign(moveX);
-            transform.localScale = new Vector3(direction, 1, 1);
-            BulletDirection = direction; // sends the direction over to the bullet
+            transform.localScale = new Vector3(direction * transform.lossyScale.x, transform.lossyScale.y, transform.lossyScale.z);
         }
 
         if (Input.GetButton("Jump") && grounded){

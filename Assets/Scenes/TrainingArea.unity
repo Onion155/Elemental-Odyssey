@@ -1291,6 +1291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <MaxHealth>k__BackingField: 100
+  IsFlyingCreature: 0
   RandomMovementRange: 5
   RandomeMovementSpeed: 1
 --- !u!70 &927664320
@@ -2860,7 +2861,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.3
+  m_Radius: 1
 --- !u!1 &1827706037
 GameObject:
   m_ObjectHideFlags: 0
