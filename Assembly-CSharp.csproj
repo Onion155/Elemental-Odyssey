@@ -63,26 +63,29 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerController.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\RoomTemplates.cs" />
-    <Compile Include="Assets\Scripts\Enemystuff\Interfaces\ITriggerCheckable.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\SpawnEnemy.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\RoomSpawner.cs" />
+    <Compile Include="Assets\Scripts\RoomStuff\EnemySpawnPointList.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\EnemyState.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\ITriggerCheckable.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\Destroyer.cs" />
-    <Compile Include="Assets\Scripts\Enemystuff\StateMachine\ConcreteStates\EnemyAttackState.cs" />
-    <Compile Include="Assets\Scripts\Enemystuff\Interfaces\IEnemyMovable.cs" />
-    <Compile Include="Assets\Scripts\Enemystuff\StateMachine\EnemyStateMachine.cs" />
-    <Compile Include="Assets\Scripts\Enemystuff\TriggerChecks\EnemyAttackDistanceCheck.cs" />
-    <Compile Include="Assets\Scripts\Enemystuff\EnemyTypes\Ghost.cs" />
-    <Compile Include="Assets\GameManagerScript.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Base\Enemy.cs" />
+    <Compile Include="Assets\Scripts\GameManagerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\CharacterStatBase.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\CharacterBase.cs" />
-    <Compile Include="Assets\Scripts\Enemystuff\Base\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Enemystuff\Interfaces\IDamageAble.cs" />
-    <Compile Include="Assets\Scripts\Enemystuff\TriggerChecks\EnemyAggroCheck.cs" />
-    <Compile Include="Assets\Scripts\Enemystuff\StateMachine\EnemyState.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\IEnemyMovable.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\EnemyStateMachine.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyAttackState.cs" />
     <Compile Include="Assets\PlayerInputActions.cs" />
-    <Compile Include="Assets\Scripts\Enemystuff\StateMachine\ConcreteStates\EnemyChaseState.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyChaseState.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\EnemyTypes\Spider.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\EnemyTypes\Ghost.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\TriggerChecks\EnemyAggroCheck.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\IDamageAble.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemieList.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyIdleState.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\GateControler.cs" />
-    <Compile Include="Assets\EnemieList.cs" />
-    <Compile Include="Assets\Scripts\Enemystuff\StateMachine\ConcreteStates\EnemyIdleState.cs" />
+    <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\TriggerChecks\EnemyAttackDistanceCheck.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

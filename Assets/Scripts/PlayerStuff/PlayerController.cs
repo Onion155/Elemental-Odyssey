@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
 
             // make the player face direction its moving
             float direction = Mathf.Sign(moveX);
-            transform.localScale = new Vector3(direction * transform.lossyScale.x, transform.lossyScale.y, transform.lossyScale.z);
+            transform.localScale = new Vector3(direction * transform.lossyScale.x, transform.lossyScale.y,  transform.lossyScale.z);
         }
 
         if (Input.GetButton("Jump") && grounded){
