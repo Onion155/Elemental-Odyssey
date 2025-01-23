@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1489609476058929004}
   - component: {fileID: 8469730257902707650}
   - component: {fileID: 8128416600723480983}
+  - component: {fileID: 2340580720215387710}
   m_Layer: 8
   m_Name: Spider
   m_TagString: Untagged
@@ -180,6 +181,28 @@ MonoBehaviour:
   IsFlyingCreature: 0
   RandomMovementRange: 1
   RandomeMovementSpeed: 4
+--- !u!95 &2340580720215387710
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418935896660781528}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ed8fa912fad51864a813bc1338b26901, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2311937331141824259
 GameObject:
   m_ObjectHideFlags: 0
