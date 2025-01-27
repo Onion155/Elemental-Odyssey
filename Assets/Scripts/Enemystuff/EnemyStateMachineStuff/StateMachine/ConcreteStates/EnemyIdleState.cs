@@ -53,15 +53,8 @@ public class EnemyIdleState : EnemyState
 
    private Vector3 GetRandomePointInCircle() // finds a random point in the circle 
     {
-        
-        if(enemy.IsFlyingCreature)
-        {
-            _RandomPos = enemy.transform.position + (Vector3)UnityEngine.Random.insideUnitCircle * enemy.RandomMovementRange;
-        }
-        else
-        {
-            _RandomPos = enemy.transform.position + new Vector3(UnityEngine.Random.insideUnitCircle.x, 0, 0) * enemy.RandomMovementRange;
-        }
+        _RandomPos = enemy.Rb.position + new Vector2(UnityEngine.Random.insideUnitCircle.x, 0) * enemy.RandomMovementRange;
+      
         return _RandomPos;
     }
 

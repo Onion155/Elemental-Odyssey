@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 1
+  waitTime: 4
 --- !u!50 &6905117839873245319
 Rigidbody2D:
   serializedVersion: 5
@@ -996,6 +997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 4
+  waitTime: 4
 --- !u!50 &5137286308867116678
 Rigidbody2D:
   serializedVersion: 5

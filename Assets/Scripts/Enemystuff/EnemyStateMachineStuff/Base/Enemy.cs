@@ -85,9 +85,9 @@ public class Enemy : MonoBehaviour, IDamageAble, IEnemyMovable, ITriggerCheckabl
     #region movement and facing
 
     // apply the movement to the enemy 
-    public void MoveEnemy(Vector2 velocity) // this does not filter out y so it can go up and down not just left and right
+    public void MoveEnemy(Vector2 velocity) // Velocity is x,y
     {
-        Rb.linearVelocity = velocity;
+        Rb.linearVelocity = new Vector2 (velocity.x, Rb.linearVelocity.y); // we just use x of velocity here and then y is kept to the current one so we have gravity applied
         CheckForLeftOrRightFacing(velocity);
     }
 

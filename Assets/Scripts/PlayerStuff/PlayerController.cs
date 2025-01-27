@@ -2,16 +2,13 @@ using System.Xml.Serialization;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D Body;
     public BoxCollider2D Groundcheck;
     public LayerMask GroundMask;
     public LayerMask SlowedMask;
-
-    public Transform WaterBullet; // this is the  projectile the player will spawn
-    public float BulletDirection;
-
  
     private float groundDecay = 0.712f;// slowing effect for smooth movement
     private bool grounded; // touching ground is true
@@ -22,9 +19,14 @@ public class PlayerController : MonoBehaviour
     private float moveX;
     private float moveY;
 
-    Vector2 freezpoz;
-    bool holdinplace;
+    private bool isfacingRight = false;
 
+    Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -36,6 +38,8 @@ public class PlayerController : MonoBehaviour
     {
         CheckGround();
         ApplyFriction();
+        animator.SetFloat("XVelocity",Mathf.Abs(Body.linearVelocity.x));// Abs sets the value to its absolute value so it will always be true
+        animator.SetFloat("YVelocity",Body.linearVelocity.y);
     }
 
     // get inputs (old unity system)
@@ -53,14 +57,12 @@ public class PlayerController : MonoBehaviour
         if (Mathf.Abs(moveX) > 0){
             Body.linearVelocity = new Vector2(moveX * groundSpeed, Body.linearVelocity.y);// this is to make it so it only changes the x axis and leaves the y axis if it is unchanged
 
-            // make the player face direction its moving
-            float direction = Mathf.Sign(moveX);
-            transform.localScale = new Vector3(direction, 1, 1);
-            BulletDirection = direction; // sends the direction over to the bullet
+            FlipSprite();
         }
 
         if (Input.GetButton("Jump") && grounded){
             Body.linearVelocity = new Vector2(Body.linearVelocity.x, jumpSpeed);
+            animator.SetBool("isJumping", !grounded);
         }
 
     }
@@ -69,6 +71,7 @@ public class PlayerController : MonoBehaviour
     void CheckGround()
     {
         grounded = Physics2D.OverlapAreaAll(Groundcheck.bounds.min, Groundcheck.bounds.max, GroundMask).Length > 0;
+        animator.SetBool("isJumping", !grounded);
         slowed = Physics2D.OverlapAreaAll(Groundcheck.bounds.min, Groundcheck.bounds.max, SlowedMask).Length > 0;
     }
 
@@ -91,5 +94,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
-
+    void FlipSprite()
+    {
+        if (isfacingRight && moveX < 0f || !isfacingRight && moveX > 0f)
+        {
+            isfacingRight = !isfacingRight;
+            Vector3 ls = transform.localScale;
+            ls.x *= -1f;
+            transform.localScale = ls;
+        }
+    }
 }

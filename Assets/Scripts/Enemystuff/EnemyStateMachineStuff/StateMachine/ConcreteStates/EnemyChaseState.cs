@@ -4,7 +4,7 @@ using UnityEngine;
 public class EnemyChaseState : EnemyState
 {
 
-    private float Fly = 0;
+   
     public EnemyChaseState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
     {
     }
@@ -19,6 +19,8 @@ public class EnemyChaseState : EnemyState
         base.EnterState();
 
         Debug.Log("You have been spotted");
+        enemy.MoveEnemy(new Vector2(0, 0)); // stops the enemy
+
     }
 
     public override void ExitState()
@@ -30,8 +32,11 @@ public class EnemyChaseState : EnemyState
     {
         base.FrameUpdate();
 
-        Fly += 0.1f;
-        enemy.MoveEnemy(new Vector2(0, Fly));
+        if (!enemy.IsAggroed) // if no longer aggro then go back to idle
+        {
+            enemy.StateMachine.ChangeState(enemy.IdleState);
+        }
+
     }
 
    
