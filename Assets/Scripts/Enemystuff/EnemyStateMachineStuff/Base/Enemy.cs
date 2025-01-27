@@ -87,7 +87,7 @@ public class Enemy : MonoBehaviour, IDamageAble, IEnemyMovable, ITriggerCheckabl
     // apply the movement to the enemy 
     public void MoveEnemy(Vector2 velocity) // Velocity is x,y
     {
-        Rb.linearVelocity = new Vector2 (velocity.x, Rb.linearVelocity.y); // we just use x of velocity here and then y is kept to the current one so we have gravity applied
+        Rb.velocity = new Vector2 (velocity.x, Rb.velocity.y); // we just use x of velocity here and then y is kept to the current one so we have gravity applied
         CheckForLeftOrRightFacing(velocity);
     }
 

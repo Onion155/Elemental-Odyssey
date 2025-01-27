@@ -38,8 +38,8 @@ public class PlayerController : MonoBehaviour
     {
         CheckGround();
         ApplyFriction();
-        animator.SetFloat("XVelocity",Mathf.Abs(Body.linearVelocity.x));// Abs sets the value to its absolute value so it will always be true
-        animator.SetFloat("YVelocity",Body.linearVelocity.y);
+        animator.SetFloat("XVelocity",Mathf.Abs(Body.velocity.x));// Abs sets the value to its absolute value so it will always be true
+        animator.SetFloat("YVelocity",Body.velocity.y);
     }
 
     // get inputs (old unity system)
@@ -55,13 +55,13 @@ public class PlayerController : MonoBehaviour
     void applyMovement()
     {
         if (Mathf.Abs(moveX) > 0){
-            Body.linearVelocity = new Vector2(moveX * groundSpeed, Body.linearVelocity.y);// this is to make it so it only changes the x axis and leaves the y axis if it is unchanged
+            Body.velocity = new Vector2(moveX * groundSpeed, Body.velocity.y);// this is to make it so it only changes the x axis and leaves the y axis if it is unchanged
 
             FlipSprite();
         }
 
         if (Input.GetButton("Jump") && grounded){
-            Body.linearVelocity = new Vector2(Body.linearVelocity.x, jumpSpeed);
+            Body.velocity = new Vector2(Body.velocity.x, jumpSpeed);
             animator.SetBool("isJumping", !grounded);
         }
 
@@ -79,16 +79,16 @@ public class PlayerController : MonoBehaviour
     void ApplyFriction()
     {
         // slows the player
-       if (slowed && Body.linearVelocity.y <= 0)
+       if (slowed && Body.velocity.y <= 0)
         {
             groundSpeed = 2f;
-            Body.linearVelocity *= groundDecay;// checks if player is in contact with ground layer if they are they will get drag(slowdown over time)
+            Body.velocity *= groundDecay;// checks if player is in contact with ground layer if they are they will get drag(slowdown over time)
         }
         // this applys friction 
-        else if (grounded && Body.linearVelocity.y <= 0)
+        else if (grounded && Body.velocity.y <= 0)
         {
             groundSpeed = 5f;
-            Body.linearVelocity *= groundDecay;// checks if player is in contact with ground layer if they are they will get drag(slowdown over time)
+            Body.velocity *= groundDecay;// checks if player is in contact with ground layer if they are they will get drag(slowdown over time)
         }
         
 

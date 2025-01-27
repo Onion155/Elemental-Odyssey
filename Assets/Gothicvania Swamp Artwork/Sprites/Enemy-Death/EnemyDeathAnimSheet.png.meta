@@ -144,6 +144,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -532,9 +545,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EnemyDeathAnimSheet_0: -242939720953063812
+      EnemyDeathAnimSheet_1: 5641653704366049681
+      EnemyDeathAnimSheet_10: 6933145259963566095
+      EnemyDeathAnimSheet_11: 4335895350125307278
+      EnemyDeathAnimSheet_12: 52424090824487734
+      EnemyDeathAnimSheet_13: 33618854993101101
+      EnemyDeathAnimSheet_14: -4790388212384787763
+      EnemyDeathAnimSheet_15: -2348133359472397840
+      EnemyDeathAnimSheet_16: 3713662733271462412
+      EnemyDeathAnimSheet_2: 6167888899429341412
+      EnemyDeathAnimSheet_3: 2719747022125015843
+      EnemyDeathAnimSheet_4: 5802168296685663673
+      EnemyDeathAnimSheet_5: 4461537785241949259
+      EnemyDeathAnimSheet_6: -286868044485485035
+      EnemyDeathAnimSheet_7: 7662507630299839608
+      EnemyDeathAnimSheet_8: 3553177983295884096
+      EnemyDeathAnimSheet_9: 6750014831483952375
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
