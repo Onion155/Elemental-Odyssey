@@ -20,9 +20,9 @@ public class EnemyIdleState : EnemyState
         base.EnterState();
 
         Debug.Log("Enemy is idling");
-
         _direction = Vector3.zero;
-        _targetPos = GetRandomePointInCircle();
+        // need to wait unttil they hit the ground or force them to the floor and then do the _targetPos
+        
     }
 
     public override void ExitState()
@@ -39,24 +39,27 @@ public class EnemyIdleState : EnemyState
             enemy.StateMachine.ChangeState(enemy.ChaseState);
         }
 
+        
         _direction = (_targetPos - enemy.transform.position).normalized; // gives is the vecot dirction for the enemy to go to the point
 
         enemy.MoveEnemy(_direction * enemy.RandomeMovementSpeed);
 
         if ((enemy.transform.position - _targetPos).sqrMagnitude < 0.01f) // if at point find another point to move to 
         {
-            _targetPos = GetRandomePointInCircle();
+            GetRandomePointInCircle();
+        }
+        else if(_targetPos == Vector3.zero)
+        {
+            GetRandomePointInCircle();
         }
     }
 
     
 
-   private Vector3 GetRandomePointInCircle() // finds a random point in the circle 
+   private void GetRandomePointInCircle() // finds a random point in the circle 
     {
-        _RandomPos = enemy.Rb.position + new Vector2(UnityEngine.Random.insideUnitCircle.x, 0) * enemy.RandomMovementRange;
-      
-        return _RandomPos;
+        _targetPos = enemy.Rb.position + new Vector2(UnityEngine.Random.insideUnitCircle.x, 0) * enemy.RandomMovementRange;
     }
 
-
+    
 }
