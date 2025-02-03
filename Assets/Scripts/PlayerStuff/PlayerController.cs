@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D Body;
     public BoxCollider2D Groundcheck;
-    public TextMeshProUGUI Mytext;
     public LayerMask GroundMask;
     public LayerMask SlowedMask;
  

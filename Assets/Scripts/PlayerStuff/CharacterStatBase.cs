@@ -1,25 +1,39 @@
-using TMPro;
+using UnityEngine.UI;
 using UnityEngine;
+
 
 public class CharacterStatBase : MonoBehaviour
 {
-    public TextMeshProUGUI myText;
+    [Header("Refernaces")]
+    public PlayerHealthDisplay healthDisplay;
+    public PlayerManaDisplay manaDisplay;
+
+    [Header("Health stats")]
     public int MaxHeath = 100;
     public int CurrentHeath = 100;
+    [Header("Mana stats")]
     public int MaxMana = 300;
     public int CurrentMana = 300;
+    [Header("Other stats")]
     public int defenece = 0;
 
     private void Start()
     {
         CurrentHeath = MaxHeath;
-        UpdateStatsText(CurrentHeath, CurrentHeath);
+        CurrentMana = MaxMana;
+
+        // send initial data to bar
+        healthDisplay.SetValue(CurrentHeath);
+       //manaDisplay.SetMax(CurrentMana);
+
+        
     }
 
     public void TakeDamage(int amount)
     {
         amount -= defenece;
         CurrentHeath -= amount;
+        healthDisplay.SetValue(CurrentHeath);
 
         if (CurrentHeath <= 0)
         {
@@ -31,6 +45,7 @@ public class CharacterStatBase : MonoBehaviour
     public void Heal(int amount)
     {
         CurrentHeath += amount;
+        healthDisplay.SetValue(CurrentHeath);
 
         if (CurrentHeath < MaxHeath)
         {
@@ -38,9 +53,5 @@ public class CharacterStatBase : MonoBehaviour
         }
     }
 
-    public void UpdateStatsText(int health , int Mana)
-    {
-        myText.text = "Health: " + health + "   Mana: " + Mana;
-        
-    }
+   
 }
