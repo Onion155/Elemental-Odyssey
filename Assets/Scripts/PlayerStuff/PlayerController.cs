@@ -1,4 +1,5 @@
 using System.Xml.Serialization;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -7,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D Body;
     public BoxCollider2D Groundcheck;
+    public TextMeshProUGUI Mytext;
     public LayerMask GroundMask;
     public LayerMask SlowedMask;
  

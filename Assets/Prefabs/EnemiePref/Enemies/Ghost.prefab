@@ -180,6 +180,7 @@ MonoBehaviour:
   <MaxHealth>k__BackingField: 100
   RandomMovementRange: 5
   RandomeMovementSpeed: 3
+  EnemyDamagePerHit: 5
 --- !u!95 &2396789891808993396
 Animator:
   serializedVersion: 7

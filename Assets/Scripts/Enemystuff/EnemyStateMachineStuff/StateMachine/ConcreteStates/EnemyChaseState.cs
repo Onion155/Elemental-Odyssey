@@ -32,11 +32,11 @@ public class EnemyChaseState : EnemyState
     {
         base.FrameUpdate();
 
-        if (enemy.isWithinAttackingDistance) // if no longer aggro then go back to idle
+        if (enemy.isWithinAttackingDistance) // if in attack range go to attack state
         {
             enemy.StateMachine.ChangeState(enemy.AttackState);
         }
-        else if (!enemy.IsAggroed)
+        else if (!enemy.IsAggroed) // if not in chase range go back to idling
         {
             enemy.StateMachine.ChangeState(enemy.IdleState);
         }

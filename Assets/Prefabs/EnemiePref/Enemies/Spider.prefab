@@ -94,7 +94,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!50 &1489609476058929004
 Rigidbody2D:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -105,8 +105,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -178,9 +178,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <MaxHealth>k__BackingField: 100
-  IsFlyingCreature: 0
   RandomMovementRange: 1
   RandomeMovementSpeed: 4
+  EnemyDamagePerHit: 2
 --- !u!95 &2340580720215387710
 Animator:
   serializedVersion: 7
@@ -398,4 +398,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50c92ba6ee252404d88ec586a6fa0fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerTarget: {fileID: 6761031321296647852, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}

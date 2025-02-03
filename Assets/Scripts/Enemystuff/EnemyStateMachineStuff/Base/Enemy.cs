@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour, IDamageAble, IEnemyMovable, ITriggerCheckabl
 
     // movemment , facing
     public Rigidbody2D Rb { get; set; }
+    public CharacterStatBase PlayerStats { get; set; }
+
     public bool IsFacingRight { get; set; } = false; // all enemies should start by facingf left 
 
     #region State Machine Variables
@@ -34,6 +36,10 @@ public class Enemy : MonoBehaviour, IDamageAble, IEnemyMovable, ITriggerCheckabl
     public float RandomeMovementSpeed = 1f; // how fast it moves to those places
     #endregion
 
+    #region Attack Variables 
+    public int EnemyDamagePerHit = 1;
+    #endregion
+
     private void Awake()
     {
         StateMachine = new EnemyStateMachine();
@@ -48,10 +54,14 @@ public class Enemy : MonoBehaviour, IDamageAble, IEnemyMovable, ITriggerCheckabl
         CurrentHealth = MaxHealth;
 
         Rb = GetComponent<Rigidbody2D>();
+        Invoke("SetReferances", 0.1f); // makes it wait 1millisecond before looking for the player because he is spawned in before then
 
         StateMachine.Initialize(IdleState); // gives the initial state 
     }
-
+    private void SetReferances()
+    {
+        PlayerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterStatBase>();
+    }
     private void Update()
     {
         StateMachine.CurrentEnemyState.FrameUpdate(); // allows you to use update in whatever class your in 
