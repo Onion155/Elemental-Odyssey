@@ -265,7 +265,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!50 &6399950708003131779
 Rigidbody2D:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -276,8 +276,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 3
   m_Material: {fileID: 6200000, guid: 3e2007549942a004cbc4bb6e2b2bcef4, type: 2}
   m_IncludeLayers:
@@ -356,6 +356,9 @@ MonoBehaviour:
   SlowedMask:
     serializedVersion: 2
     m_Bits: 512
+  ProjectileList:
+  - {fileID: 7702693508131301136, guid: f61211918d8f05d458fdbf8c9cac72d7, type: 3}
+  Projectiles: {fileID: 0}
 --- !u!114 &99965466849652664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,8 +371,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b03e8bbb07516143a243a72c27d369e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthDisplay: {fileID: 0}
+  manaDisplay: {fileID: 0}
   MaxHeath: 100
   CurrentHeath: 100
+  MaxMana: 300
+  CurrentMana: 300
   defenece: 0
 --- !u!95 &3654415931248297093
 Animator:

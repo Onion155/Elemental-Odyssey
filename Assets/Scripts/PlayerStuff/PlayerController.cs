@@ -6,10 +6,18 @@ using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 public class PlayerController : MonoBehaviour
 {
+    [Header("Refernaces")]
     public Rigidbody2D Body;
+
+    [Header("LayerMasks")]
     public BoxCollider2D Groundcheck;
     public LayerMask GroundMask;
     public LayerMask SlowedMask;
+
+    [Header("ElementalBullets")]
+    public GameObject[] ProjectileList;
+    public Transform Projectiles;
+    public Transform ProjectileNode;
  
     private float groundDecay = 0.712f;// slowing effect for smooth movement
     private bool grounded; // touching ground is true
@@ -19,6 +27,9 @@ public class PlayerController : MonoBehaviour
 
     private float moveX;
     private float moveY;
+
+    private bool Fire1;
+    private int Fire1timer;
 
     private bool isfacingRight = false;
 
@@ -33,13 +44,14 @@ public class PlayerController : MonoBehaviour
     {
         GetInput();
         applyMovement();
+        checkShooting();
     }
     
     private void FixedUpdate()
     {
         CheckGround();
         ApplyFriction();
-        animator.SetFloat("XVelocity",Mathf.Abs(Body.velocity.x));// Abs sets the value to its absolute value so it will always be true
+        animator.SetFloat("XVelocity",Mathf.Abs(Body.velocity.x));// Abs sets the value to its absolute value so it will always be a positive value
         animator.SetFloat("YVelocity",Body.velocity.y);
     }
 
@@ -50,8 +62,24 @@ public class PlayerController : MonoBehaviour
          moveX = Input.GetAxis("Horizontal");
          moveY = Input.GetAxis("Vertical");
 
+        // shooting inputs
+        Fire1 = Input.GetButton("Fire1");
+
     }
 
+    void checkShooting()
+    {
+        if(Fire1timer > 0)
+        {
+            Fire1timer--;
+        }
+        else if(Fire1 && Fire1timer <= 0)
+        {
+            GameObject newProjectile = Instantiate(ProjectileList[0], ProjectileNode);
+            newProjectile.transform.SetParent(Projectiles);
+            Fire1timer = 30;
+        }
+    }
     // apply movement
     void applyMovement()
     {

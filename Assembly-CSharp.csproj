@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\EnemyStateMachine.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyAttackState.cs" />
     <Compile Include="Assets\PlayerInputActions.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\ElementControl.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyChaseState.cs" />
     <Compile Include="Assets\Scripts\UI\GameManagerScript.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\EnemyTypes\Spider.cs" />

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\ui\\gamemanagerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\gamemanagerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|c:\\users\\marsgaming155\\desktop\\unity folder\\elemental odyssey\\assets\\scripts\\playerstuff\\characterstatbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\characterstatbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|c:\\users\\marsgaming155\\desktop\\unity folder\\elemental odyssey\\assets\\scripts\\ui\\playerhealthdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\ui\\playerhealthdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\playerhealthdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|c:\\users\\marsgaming155\\desktop\\unity folder\\elemental odyssey\\assets\\scripts\\ui\\playermanadisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\ui\\playermanadisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\playermanadisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|c:\\users\\marsgaming155\\desktop\\unity folder\\elemental odyssey\\assets\\scripts\\ui\\gamemanagerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\gamemanagerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,20 +46,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "GameManagerScript.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\UI\\GameManagerScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\GameManagerScript.cs",
               "ToolTip": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\UI\\GameManagerScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\GameManagerScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T21:01:42.351Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PlayerManaDisplay.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\UI\\PlayerManaDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\PlayerManaDisplay.cs",
@@ -67,12 +67,11 @@
               "RelativeToolTip": "Assets\\Scripts\\UI\\PlayerManaDisplay.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T20:50:37.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T20:50:37.982Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerHealthDisplay.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\UI\\PlayerHealthDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\PlayerHealthDisplay.cs",
@@ -80,12 +79,11 @@
               "RelativeToolTip": "Assets\\Scripts\\UI\\PlayerHealthDisplay.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T20:49:24.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T20:49:24.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CharacterStatBase.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\CharacterStatBase.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStuff\\CharacterStatBase.cs",
@@ -106,8 +104,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerStuff\\PlayerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T20:24:18.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T20:24:18.322Z"
             }
           ]
         }
