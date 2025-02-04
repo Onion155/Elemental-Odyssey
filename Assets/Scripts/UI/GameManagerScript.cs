@@ -2,18 +2,23 @@ using UnityEngine;
 
 public class GameManagerScript : MonoBehaviour
 {
-    public GameObject Player;
+    public Transform PlayerPos;
 
-    public GameObject PlayerSpawnPoint;
+    public Transform PlayerSpawnPoint;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Instantiate(Player, PlayerSpawnPoint.transform.position , Quaternion.identity);
+        ResetPlayerPos();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    void ResetPlayerPos()
+    {
+        PlayerPos.position = PlayerSpawnPoint.position;
     }
 }

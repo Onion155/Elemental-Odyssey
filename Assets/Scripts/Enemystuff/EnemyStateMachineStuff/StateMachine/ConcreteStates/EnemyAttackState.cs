@@ -15,7 +15,7 @@ public class EnemyAttackState : EnemyState
     public override void EnterState()
     {
         base.EnterState();
-        Debug.Log("Enemy is attacking you");
+        //Debug.Log("Enemy is attacking you");
         
 
     }

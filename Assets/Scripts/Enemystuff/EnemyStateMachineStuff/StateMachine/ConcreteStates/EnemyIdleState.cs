@@ -19,7 +19,7 @@ public class EnemyIdleState : EnemyState
     {
         base.EnterState();
 
-        Debug.Log("Enemy is idling");
+       // Debug.Log("Enemy is idling");
         _direction = Vector3.zero;
         // need to wait unttil they hit the ground or force them to the floor and then do the _targetPos
         

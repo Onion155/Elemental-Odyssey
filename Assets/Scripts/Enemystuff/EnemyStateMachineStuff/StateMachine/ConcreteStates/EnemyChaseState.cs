@@ -18,7 +18,7 @@ public class EnemyChaseState : EnemyState
     {
         base.EnterState();
 
-        Debug.Log("You have been spotted");
+       // Debug.Log("You have been spotted");
         enemy.MoveEnemy(new Vector2(0, 0)); // stops the enemy
 
     }
