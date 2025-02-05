@@ -75,9 +75,9 @@ public class PlayerController : MonoBehaviour
         }
         else if(Fire1 && Fire1timer <= 0)
         {
-            GameObject newProjectile = Instantiate(ProjectileList[0], ProjectileNode);
+            GameObject newProjectile = Instantiate(ProjectileList[Random.Range(0,ProjectileList.Length)], ProjectileNode);
             newProjectile.transform.SetParent(Projectiles);
-            Fire1timer = 30;
+            Fire1timer = 1000;
         }
     }
     // apply movement

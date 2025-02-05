@@ -24,7 +24,7 @@ public class EntrancesController : MonoBehaviour
     private void CreateDoors()
     {
         int Door = 0;
-        foreach (Transform t in DoorSpawnPoints)
+        foreach (Transform t in DoorSpawnPoints) // instead of doing this create the doors before hand and set them to active or not
         {
             // Create a new GameObject
             GameObject square = new GameObject("Square");
