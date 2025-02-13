@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\ITriggerCheckable.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\Destroyer.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Base\Enemy.cs" />
+    <Compile Include="Assets\Scripts\RoomStuff\cameradoors.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\CharacterStatBase.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerManaDisplay.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\IEnemyMovable.cs" />

@@ -1,51 +1,70 @@
+using UnityEditor.SpeedTree.Importer;
 using UnityEngine;
 
 public class EntrancesController : MonoBehaviour
 {
+    [Header ("Door")]
     [SerializeField]
+    // door stuff
     private BoxCollider2D PlayerHitbox;
-    public Transform[] DoorSpawnPoints;
+    public GameObject[] Doors;
+
+    [Header("Camera")]
+    // camera controls
+    public Transform cameranode;
+    private Transform MainCamera;
+
+    [Header("Enemie")]
+    public bool EnemiesDead = false;
+
     void Start()
     {
         PlayerHitbox = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>();
-
+        MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision == PlayerHitbox)
         {
-            CreateDoors();
+            Invoke("ActivateDoors", 1.0f);
+            SetCamera();
+            Debug.Log("Settings "+ MainCamera.name+ " to "+ cameranode.transform );
             
         }
 
     }
 
-    private void CreateDoors()
+    private void Update()
     {
-        int Door = 0;
-        foreach (Transform t in DoorSpawnPoints) // instead of doing this create the doors before hand and set them to active or not
+        if (EnemiesDead)
         {
-            // Create a new GameObject
-            GameObject square = new GameObject("Square");
-
-            // Add a SpriteRenderer component
-            SpriteRenderer renderer = square.AddComponent<SpriteRenderer>();
-
-            // Create a new 2D texture (a simple white square)
-            Texture2D texture = new Texture2D(15, 15);
-            texture.SetPixel(0, 0, Color.white);
-            texture.Apply();
-
-            // Create a new sprite using the texture
-            Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
-            renderer.sprite = sprite;
-
-            // Set the position of the square
-            square.transform.position = DoorSpawnPoints[Door].position;
-            Door++;
+            DeactivateDoors();
         }
     }
 
+    private void ActivateDoors()
+    {
+        int Door = 0;
+        foreach (GameObject t in Doors) // instead of doing this create the doors before hand and set them to active or not
+        {
+            Doors[Door].SetActive(true);
+            Door++;
+        }
+    }
+    private void SetCamera()
+    {
+        MainCamera.position = new Vector3(cameranode.position.x, cameranode.position.y , MainCamera.position.z);
+    }
 
+    private void DeactivateDoors()
+    {
+        int Door = 0;
+        foreach (GameObject t in Doors) // instead of doing this create the doors before hand and set them to active or not
+        {
+            Destroy(Doors[Door]);
+            Door++;
+        }
+        Destroy(gameObject);
+    }
 }
