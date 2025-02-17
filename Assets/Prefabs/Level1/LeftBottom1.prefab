@@ -37,6 +37,37 @@ Transform:
   - {fileID: 7415694286804932351}
   m_Father: {fileID: 7877105173941153584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &352713548122344951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7006091297198132425}
+  m_Layer: 0
+  m_Name: Enemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7006091297198132425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352713548122344951}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7877105173941153584}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &681200276680038172
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,6 +885,8 @@ MonoBehaviour:
   - {fileID: 7326246649040713029}
   - {fileID: 6377026536087336169}
   cameranode: {fileID: 7351647225634116721}
+  EnemiesSpawned: 0
+  EnemyNodes: []
 --- !u!61 &8002485836786470427
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1111,6 +1144,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 7006091297198132425}
   - {fileID: 5243918154869469154}
   - {fileID: 2972797771992625289}
   - {fileID: 7351647225634116721}

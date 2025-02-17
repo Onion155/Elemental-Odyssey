@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEditor.SpeedTree.Importer;
 using UnityEngine;
 
@@ -16,14 +18,15 @@ public class EntrancesController : MonoBehaviour
 
     [Header("Enemie")]
     public bool EnemiesSpawned = false;
-    public SpawnEnemy[] EnemyNodes;
+    public List<SpawnEnemy> EnemyNodes = new List<SpawnEnemy>(); // all the spawning points for the enemies in a floor
+    private Transform EnemieList; // all the enemies for each floor will be in here
 
 
     void Start()
     {
         PlayerHitbox = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>();
         MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
-       
+        EnemieList = transform.parent.GetChild(1); // make sure that the "enemies" is in the second position (dont forget the platforms are spawned as first always)
 
        Invoke("SetEnemyNodes",1.0f);
 
@@ -45,7 +48,7 @@ public class EntrancesController : MonoBehaviour
     {
         if (EnemiesSpawned)
         {
-            if (EnemyNodes.Length == 0)
+            if (EnemieList.transform.childCount <= 0)
             {
                 DestroyDoors();
                 Debug.Log("Room Cleared");
@@ -65,10 +68,10 @@ public class EntrancesController : MonoBehaviour
         foreach(SpawnEnemy i in EnemyNodes)
         {
             Debug.Log("Attempting to spawned enemy: " + Enemy);
-            EnemyNodes[Enemy].Spawn();
+            EnemyNodes[Enemy].Spawn(EnemieList);
             Enemy++;
         }
-       // EnemiesSpawned = true;
+       EnemiesSpawned = true;
     }
     private void SetCamera()
     {
@@ -90,20 +93,27 @@ public class EntrancesController : MonoBehaviour
     {
         // Get the parent object
         Transform Platform = transform.parent.GetChild(0);
-
+        Debug.Log("--------------------------");
+        Debug.Log(Platform.name);
 
         Debug.Log("Attempting to set enemies");
-        int i = 0;
+  
         // Loop through all child objects of the parent object
         foreach (Transform child in Platform) // search platform children 
         {
             Debug.Log("bloob");
             if (child.name == "EnemyNode") // if a node add it 
             {
-                EnemyNodes[i] = child.GetComponent<SpawnEnemy>();
-                Debug.Log("EnemyNodes has obtained: " + i + " enemies");
-                i++;
+                Debug.Log("blub");
+                SpawnEnemy spawnEnemy = child.gameObject.GetComponent<SpawnEnemy>();
+
+                if (spawnEnemy != null)
+                {
+                    EnemyNodes.Add(spawnEnemy);
+                    Debug.Log($"EnemyNodes has obtained: {EnemyNodes.Count} enemies");
+                }
             }
         }
+        Debug.Log("--------------------------");
     }
 }
