@@ -18,16 +18,14 @@ public class EntrancesController : MonoBehaviour
     public bool EnemiesSpawned = false;
     public SpawnEnemy[] EnemyNodes;
 
-    Transform parentTransform;
 
     void Start()
     {
         PlayerHitbox = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>();
         MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
-        // Get the parent object
-        parentTransform = transform.parent;
+       
 
-        SetEnemyNodes();
+       Invoke("SetEnemyNodes",1.0f);
 
     }
 
@@ -90,18 +88,22 @@ public class EntrancesController : MonoBehaviour
 
     private void SetEnemyNodes()
     {
+        // Get the parent object
+        Transform Platform = transform.parent.GetChild(0);
+
+
         Debug.Log("Attempting to set enemies");
         int i = 0;
         // Loop through all child objects of the parent object
-        foreach (Transform child in parentTransform)
+        foreach (Transform child in Platform) // search platform children 
         {
-            if (child.name == "EnemyNode")
+            Debug.Log("bloob");
+            if (child.name == "EnemyNode") // if a node add it 
             {
                 EnemyNodes[i] = child.GetComponent<SpawnEnemy>();
-                Debug.Log("EnemyNodes as obtained: " + i + " enemies");
+                Debug.Log("EnemyNodes has obtained: " + i + " enemies");
                 i++;
             }
-
         }
     }
 }

@@ -41,6 +41,7 @@ public class RoomSpawner : MonoBehaviour
                 newRoom = Instantiate(templates.topRooms[rand], transform.position , templates.topRooms[rand].transform.rotation); 
                 newInternalTemplate = Instantiate(InnerTemplate.topRooms[rand], transform.position, InnerTemplate.topRooms[rand].transform.rotation);
                 newInternalTemplate.transform.SetParent(newRoom.transform);
+                newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
                 newRoom.transform.SetParent(parentObject);
             }
             else if (openingDirection == 2)
@@ -50,6 +51,7 @@ public class RoomSpawner : MonoBehaviour
                 newRoom =  Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation);
                 newInternalTemplate = Instantiate(InnerTemplate.topRooms[rand], transform.position, InnerTemplate.topRooms[rand].transform.rotation);
                 newInternalTemplate.transform.SetParent(newRoom.transform);
+                newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
                 newRoom.transform.SetParent(parentObject);
             }
             else if (openingDirection == 3)
@@ -59,6 +61,7 @@ public class RoomSpawner : MonoBehaviour
                 newRoom = Instantiate(templates.rightRooms[rand], transform.position , templates.rightRooms[rand].transform.rotation);
                 newInternalTemplate = Instantiate(InnerTemplate.topRooms[rand], transform.position, InnerTemplate.topRooms[rand].transform.rotation);
                 newInternalTemplate.transform.SetParent(newRoom.transform);
+                newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
                 newRoom.transform.SetParent(parentObject);
             }
             else if (openingDirection == 4)
@@ -68,6 +71,7 @@ public class RoomSpawner : MonoBehaviour
                 newRoom = Instantiate(templates.leftRooms[rand], transform.position , templates.leftRooms[rand].transform.rotation);
                 newInternalTemplate = Instantiate(InnerTemplate.topRooms[rand], transform.position, InnerTemplate.topRooms[rand].transform.rotation);
                 newInternalTemplate.transform.SetParent(newRoom.transform);
+                newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
                 newRoom.transform.SetParent(parentObject);
             }
             spawned = true;

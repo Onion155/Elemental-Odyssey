@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 4877668605888686256}
   m_Layer: 0
   m_Name: Plat&EnemBottom1
-  m_TagString: Untagged
+  m_TagString: Platforms
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
