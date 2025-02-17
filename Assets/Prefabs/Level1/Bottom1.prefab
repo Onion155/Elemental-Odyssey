@@ -49,6 +49,8 @@ MonoBehaviour:
   Doors:
   - {fileID: 7442201617408395196}
   cameranode: {fileID: 9204593760349488734}
+  EnemiesSpawned: 0
+  EnemyNodes: []
 --- !u!61 &2596446156985403263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -685,8 +687,8 @@ Transform:
   - {fileID: 9204593760349488734}
   - {fileID: 4644651182983329255}
   - {fileID: 9165637801305403608}
-  - {fileID: 4748153109639957144}
   - {fileID: 6824592290168852874}
+  - {fileID: 4748153109639957144}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &4532652864064248037

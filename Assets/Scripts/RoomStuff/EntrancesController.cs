@@ -15,12 +15,20 @@ public class EntrancesController : MonoBehaviour
     private Transform MainCamera;
 
     [Header("Enemie")]
-    public bool EnemiesDead = false;
+    public bool EnemiesSpawned = false;
+    public SpawnEnemy[] EnemyNodes;
+
+    Transform parentTransform;
 
     void Start()
     {
         PlayerHitbox = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>();
         MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
+        // Get the parent object
+        parentTransform = transform.parent;
+
+        SetEnemyNodes();
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,20 +45,32 @@ public class EntrancesController : MonoBehaviour
 
     private void Update()
     {
-        if (EnemiesDead)
+        if (EnemiesSpawned)
         {
-            DestroyDoors();
+            if (EnemyNodes.Length == 0)
+            {
+                DestroyDoors();
+                Debug.Log("Room Cleared");
+            }
         }
     }
 
     private void ActivateDoors()
     {
         int Door = 0;
+        int Enemy = 0;
         foreach (GameObject t in Doors) // instead of doing this create the doors before hand and set them to active or not
         {
             Doors[Door].SetActive(true);
             Door++;
         }
+        foreach(SpawnEnemy i in EnemyNodes)
+        {
+            Debug.Log("Attempting to spawned enemy: " + Enemy);
+            EnemyNodes[Enemy].Spawn();
+            Enemy++;
+        }
+       // EnemiesSpawned = true;
     }
     private void SetCamera()
     {
@@ -66,5 +86,22 @@ public class EntrancesController : MonoBehaviour
             Door++;
         }
         Destroy(gameObject);
+    }
+
+    private void SetEnemyNodes()
+    {
+        Debug.Log("Attempting to set enemies");
+        int i = 0;
+        // Loop through all child objects of the parent object
+        foreach (Transform child in parentTransform)
+        {
+            if (child.name == "EnemyNode")
+            {
+                EnemyNodes[i] = child.GetComponent<SpawnEnemy>();
+                Debug.Log("EnemyNodes as obtained: " + i + " enemies");
+                i++;
+            }
+
+        }
     }
 }
