@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|c:\\users\\marsgaming155\\desktop\\unity folder\\elemental odyssey\\assets\\scripts\\playerstuff\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|c:\\users\\marsgaming155\\desktop\\unity folder\\elemental odyssey\\assets\\scripts\\roomstuff\\entrancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\roomstuff\\entrancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|c:\\users\\marsgaming155\\desktop\\unity folder\\elemental odyssey\\assets\\scripts\\enemystuff\\spawnenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\enemystuff\\spawnenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemystuff\\spawnenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "SpawnEnemy.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\Enemystuff\\SpawnEnemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemystuff\\SpawnEnemy.cs",
@@ -46,34 +46,32 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemystuff\\SpawnEnemy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T16:37:35.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T16:37:35.82Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "EntrancesController.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\RoomStuff\\EntrancesController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RoomStuff\\EntrancesController.cs",
               "ToolTip": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\RoomStuff\\EntrancesController.cs",
               "RelativeToolTip": "Assets\\Scripts\\RoomStuff\\EntrancesController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwEMAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T10:40:07.576Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStuff\\PlayerController.cs",
               "ToolTip": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerStuff\\PlayerController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAwEMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAEMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T20:24:18.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T20:24:18.322Z"
             }
           ]
         }

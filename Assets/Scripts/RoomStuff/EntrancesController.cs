@@ -39,7 +39,7 @@ public class EntrancesController : MonoBehaviour
     {
         if (EnemiesDead)
         {
-            DeactivateDoors();
+            DestroyDoors();
         }
     }
 
@@ -57,7 +57,7 @@ public class EntrancesController : MonoBehaviour
         MainCamera.position = new Vector3(cameranode.position.x, cameranode.position.y , MainCamera.position.z);
     }
 
-    private void DeactivateDoors()
+    private void DestroyDoors()
     {
         int Door = 0;
         foreach (GameObject t in Doors) // instead of doing this create the doors before hand and set them to active or not
