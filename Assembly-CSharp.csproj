@@ -62,6 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\Elemental.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\Elements\ConcreteElementStates\WaterState.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\RoomTemplates.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\SpawnEnemy.cs" />
@@ -74,10 +76,14 @@
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\ITriggerCheckable.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\Destroyer.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Base\Enemy.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\Elements\ConcreteElementStates\FireState.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\cameradoors.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\Elements\ConcreteElementStates\AirState.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\CharacterStatBase.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerManaDisplay.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\ElementalStateMachine.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\IEnemyMovable.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\Elements\ConcreteElementStates\EarthState.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\EnemyStateMachine.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyAttackState.cs" />
     <Compile Include="Assets\PlayerInputActions.cs" />
@@ -87,6 +93,7 @@
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\EnemyTypes\Ghost.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\Anilities\WaterBullet.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\EntrancesController.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\ElementalState.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\TriggerChecks\EnemyAggroCheck.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\IDamageAble.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemieList.cs" />

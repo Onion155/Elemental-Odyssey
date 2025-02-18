@@ -54,23 +54,17 @@ public class Enemy : MonoBehaviour, IDamageAble, IEnemyMovable, ITriggerCheckabl
         CurrentHealth = MaxHealth;
 
         Rb = GetComponent<Rigidbody2D>();
-        Invoke("SetReferances", 0.1f); // makes it wait 1millisecond before looking for the player because he is spawned in before then
+        PlayerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterStatBase>();
 
         StateMachine.Initialize(IdleState); // gives the initial state 
     }
-    private void SetReferances()
-    {
-        PlayerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterStatBase>();
-    }
+    
     private void Update()
     {
         StateMachine.CurrentEnemyState.FrameUpdate(); // allows you to use update in whatever class your in 
     }
 
-    private void FixedUpdate()
-    {
-       
-    }
+  
 
     #region Health and die function
     public void Damage(float damageAmount)
