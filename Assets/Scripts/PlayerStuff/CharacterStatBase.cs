@@ -22,9 +22,13 @@ public class CharacterStatBase : MonoBehaviour
         CurrentHeath = MaxHeath;
         CurrentMana = MaxMana;
 
-        // send initial data to bar
+        // send initial data to bars
+        //Health
+        healthDisplay.SetMax(MaxHeath);
         healthDisplay.SetValue(CurrentHeath);
-       //manaDisplay.SetMax(CurrentMana);
+        //Mana
+        manaDisplay.SetMax(MaxMana);
+        manaDisplay.SetValue(CurrentMana);
 
         
     }

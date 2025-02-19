@@ -2647,6 +2647,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c746cf608e2ae04abf790b45f86ea14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1816282625 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4047567897340304394, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
+  m_PrefabInstance: {fileID: 5295597285728553311}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1827706037
 GameObject:
   m_ObjectHideFlags: 0
@@ -10577,6 +10588,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7390716914543199939, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1816282625}
     - target: {fileID: 7605352893422352714, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -10595,19 +10610,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8757622470575662416, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8757622470575662416, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9170136453301731966, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9170136453301731966, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

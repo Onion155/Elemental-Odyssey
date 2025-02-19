@@ -1,17 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerHealthDisplay : MonoBehaviour
 {
-    private Slider healthSlider;
-    void Start()
-    {
-        healthSlider = GetComponent<Slider>();
-        healthSlider.maxValue = 100; // temporatry fix should work in the functrion 
-        healthSlider.value = healthSlider.maxValue;
-    }
+    public Slider healthSlider;
+    public TMP_Text healthText;
 
-    public void SetMax(int amount) // this does not work for some odd reason find out why 
+    public void SetMax(int amount) 
     {
         healthSlider.maxValue = amount;
     }
@@ -19,7 +15,7 @@ public class PlayerHealthDisplay : MonoBehaviour
    public void SetValue(int amount)
     {
         healthSlider.value = amount;
-    }
+        healthText.text = amount.ToString();
 
-    
+    }
 }
