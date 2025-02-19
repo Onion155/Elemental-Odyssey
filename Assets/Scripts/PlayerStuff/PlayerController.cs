@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     public Transform ProjectileList;
     public Transform ProjectileNode;
     public Elemental element;
+    public GameObject Ab1;
+    public GameObject Ab2;
 
     [Header("PlayerInputControls")]
     public PlayerControls PlayerControls;
@@ -199,8 +201,10 @@ public class PlayerController : MonoBehaviour
     {
         if (AbilityTimer1 <= 0)
         {
+
             Debug.Log("Ability1");
-            // insert use ability 
+            GameObject newProjectile = Instantiate(Ab1, ProjectileNode);
+            newProjectile.transform.SetParent(ProjectileList);
             AbilityTimer1 = 1000;
         }
     }
@@ -209,7 +213,8 @@ public class PlayerController : MonoBehaviour
         if (AbilityTimer1 <= 0)
         {
             Debug.Log("Ability2");
-            // insert use ability 
+            GameObject newProjectile = Instantiate(Ab2, ProjectileNode);
+            newProjectile.transform.SetParent(ProjectileList);
             AbilityTimer2 = 1000;
         }
     }

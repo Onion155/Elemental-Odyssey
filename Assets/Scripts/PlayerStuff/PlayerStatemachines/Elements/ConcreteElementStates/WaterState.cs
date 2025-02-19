@@ -13,6 +13,7 @@ public class WaterState : ElementalState
         Debug.Log("Current Element: Water");
 
         element.PC.Projectile = element.ElementalBullets[0];
+        element.PC.Ab1 = element.ElementalAbilities1[0];
     }
 
     public override void ExitState()

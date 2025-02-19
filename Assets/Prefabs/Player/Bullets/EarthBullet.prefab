@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8938226652201316393}
   - component: {fileID: 3402863140149684288}
   - component: {fileID: 354514164344731213}
-  - component: {fileID: 8097774396980327904}
+  - component: {fileID: -5079857824171689405}
   m_Layer: 0
   m_Name: EarthBullet
   m_TagString: Untagged
@@ -163,7 +163,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8097774396980327904
+--- !u!114 &-5079857824171689405
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6761473078163966433}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6976aad6363b1d84dad038f6f31b41f4, type: 3}
+  m_Script: {fileID: 11500000, guid: ffcf4a7152fa27b49be3d020456d5673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ProjectileSpeed: 1
