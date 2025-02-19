@@ -8,6 +8,7 @@ public class AirState : ElementalState
     public override void EnterState()
     {
         base.EnterState();
+        element.PC.Projectile = element.ElementalBullets[1];
         Debug.Log("Current Element: Air");
     }
 
@@ -19,5 +20,7 @@ public class AirState : ElementalState
     public override void FrameUpdate()
     {
         base.FrameUpdate();
+
+        
     }
 }

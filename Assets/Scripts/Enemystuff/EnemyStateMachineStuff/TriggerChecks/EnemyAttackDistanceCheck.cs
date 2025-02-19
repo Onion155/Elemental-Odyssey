@@ -12,7 +12,7 @@ public class EnemyAttackingDistanceCheck : MonoBehaviour
         _enemy = GetComponentInParent<Enemy>();
 
 
-        Invoke("SetPlayer", 0.1f);// this is a temporary fix the problem is the prefab player needs time to spawn before the enemy can check to find it by tag
+        SetPlayer();
         // P.S. it does not give a error when the player is not found through the tag like normal
 
     }

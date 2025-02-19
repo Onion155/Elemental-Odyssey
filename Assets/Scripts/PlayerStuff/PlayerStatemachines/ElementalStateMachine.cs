@@ -10,7 +10,7 @@ public class ElementalStateMachine
         CurrentElement.EnterState();
     }
 
-    public void ExitState(ElementalState newElement)
+    public void ChangeState(ElementalState newElement)
     {
         CurrentElement.ExitState();
         CurrentElement = newElement;

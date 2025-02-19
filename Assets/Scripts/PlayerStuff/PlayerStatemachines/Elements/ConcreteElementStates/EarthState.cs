@@ -8,6 +8,7 @@ public class EarthState : ElementalState
     public override void EnterState()
     {
         base.EnterState();
+        element.PC.Projectile = element.ElementalBullets[2];
         Debug.Log("Current Element: Earth");
     }
 
@@ -19,5 +20,6 @@ public class EarthState : ElementalState
     public override void FrameUpdate()
     {
         base.FrameUpdate();
+        
     }
 }

@@ -37,5 +37,14 @@ public class ProjectileBase : MonoBehaviour
         target.GetComponent<Enemy>().Damage(Damage); // this works even if the object has a child script that inherits from this script
         
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 8)
+        {
+            DealDamage(collision.gameObject);
+            Debug.Log("Trying to deal damage");
+            Destroy(gameObject);
+        }
+    }
 
 }
