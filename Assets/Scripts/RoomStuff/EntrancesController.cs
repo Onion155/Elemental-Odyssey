@@ -34,14 +34,16 @@ public class EntrancesController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision == PlayerHitbox)
+        if (!EnemiesSpawned)
         {
-            Invoke("ActivateDoors", 1.0f);
-            SetCamera();
-            Debug.Log("Settings "+ MainCamera.name+ " to "+ cameranode.transform );
-            
-        }
+            if (collision == PlayerHitbox)
+            {
+                Invoke("ActivateDoors", 1.0f);
+                SetCamera();
+                Debug.Log("Settings " + MainCamera.name + " to " + cameranode.transform);
 
+            }
+        }
     }
 
     private void Update()
