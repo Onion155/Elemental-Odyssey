@@ -99,6 +99,7 @@
     <Compile Include="Assets\BuriningRadius.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\IDamageAble.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemieList.cs" />
+    <Compile Include="Assets\AirDash.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyIdleState.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\GateControler.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\TriggerChecks\EnemyAttackDistanceCheck.cs" />

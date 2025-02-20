@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public GameObject Projectile;
     public Transform ProjectileList;
     public Transform ProjectileNode;
+    public Transform UtilNode;
     public Elemental element;
     public GameObject Ab1;
     public GameObject Ab2;
@@ -210,13 +211,12 @@ public class PlayerController : MonoBehaviour
             AbilityTimer1 = 1000;
         }
     }
-    private void Ability2(InputAction.CallbackContext context)
+    private void Ability2(InputAction.CallbackContext context) // these will be more utillity based so no projectiles
     {
         if (AbilityTimer1 <= 0)
         {
             Debug.Log("Ability2");
-            GameObject newProjectile = Instantiate(Ab2, ProjectileNode);
-            newProjectile.transform.SetParent(ProjectileList);
+            Instantiate(Ab2, UtilNode);
             AbilityTimer2 = 1000;
         }
     }

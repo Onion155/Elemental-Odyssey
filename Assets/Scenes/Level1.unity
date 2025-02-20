@@ -576,6 +576,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0ed2d12bab353e47b949e340e32928e, type: 3}
+--- !u!1 &1325819768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6761031321296647852, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
+  m_PrefabInstance: {fileID: 1752460319}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1524517072
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,6 +979,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1605434213}
     - target: {fileID: 2435307854886251364, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
+      propertyPath: element
+      value: 
+      objectReference: {fileID: 1752460321}
+    - target: {fileID: 2435307854886251364, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
+      propertyPath: UtilNode
+      value: 
+      objectReference: {fileID: 1871217572}
+    - target: {fileID: 2435307854886251364, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
       propertyPath: Projectiles
       value: 
       objectReference: {fileID: 119923417}
@@ -1028,11 +1041,43 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6761031321296647852, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1752460321}
   m_SourcePrefab: {fileID: 100100000, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
 --- !u!4 &1752460320 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3896001230777534722, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
+  m_PrefabInstance: {fileID: 1752460319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1752460321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325819768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0356f1c94d2974cb37816dd395508b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ElementalBullets:
+  - {fileID: 7702693508131301136, guid: f61211918d8f05d458fdbf8c9cac72d7, type: 3}
+  - {fileID: 7702693508131301136, guid: 8b221c0948c23e645b01aabaf4e4ae61, type: 3}
+  - {fileID: 6761473078163966433, guid: 9a5c5edf9b8c6be4f8c0d7fd66f39a4a, type: 3}
+  - {fileID: 7702693508131301136, guid: c60eb91a87866db40a3d56611f0d1af1, type: 3}
+  ElementalAbilities1:
+  - {fileID: 8045060014928182798, guid: 8ec788ef1e5457f4fb6b580f203bb1e7, type: 3}
+  - {fileID: 0}
+  - {fileID: 8857043692568084133, guid: 991a82bf57271df47ba50ff120f0901c, type: 3}
+  - {fileID: 5192847333089589344, guid: 78c2a813b01352f4ebc8ff65da8abc57, type: 3}
+  ElementalAbilities2: []
+  abilitynum: 0
+--- !u!4 &1871217572 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8460140462184224938, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
   m_PrefabInstance: {fileID: 1752460319}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2014056768
@@ -1149,6 +1194,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 119923417}
   - {fileID: 619394802}
   - {fileID: 2119143911}
   - {fileID: 2014056771}
@@ -1159,4 +1205,3 @@ SceneRoots:
   - {fileID: 1605434211}
   - {fileID: 1752460319}
   - {fileID: 1524517076}
-  - {fileID: 119923417}

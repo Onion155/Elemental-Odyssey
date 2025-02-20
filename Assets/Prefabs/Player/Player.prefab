@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2334687664420302642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8460140462184224938}
+  m_Layer: 0
+  m_Name: Utillitypoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8460140462184224938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2334687664420302642}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.295, y: 0.019, z: -0.016896248}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3896001230777534722}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3196824992799374952
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,7 +43,7 @@ GameObject:
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -25,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 3196824992799374952}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.144, y: 0.019, z: -0.016896248}
+  m_LocalPosition: {x: -0.2, y: 0.019, z: -0.016896248}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68,6 +99,7 @@ Transform:
   m_Children:
   - {fileID: 4721731225423498460}
   - {fileID: 4360474339285506593}
+  - {fileID: 8460140462184224938}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4738448601879842599
@@ -218,16 +250,54 @@ MonoBehaviour:
   SlowedMask:
     serializedVersion: 2
     m_Bits: 512
-  ProjectileList:
-  - {fileID: 7702693508131301136, guid: f61211918d8f05d458fdbf8c9cac72d7, type: 3}
-  - {fileID: 6761473078163966433, guid: 9a5c5edf9b8c6be4f8c0d7fd66f39a4a, type: 3}
-  Projectiles: {fileID: 0}
+  Projectile: {fileID: 0}
+  ProjectileList: {fileID: 0}
   ProjectileNode: {fileID: 4360474339285506593}
-  playerMovement:
-    m_Name: Player Movement
+  UtilNode: {fileID: 0}
+  element: {fileID: 0}
+  Ab1: {fileID: 0}
+  Ab2: {fileID: 0}
+  move:
+    m_Name: Move
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 646ac1ae-4560-4bb7-9854-b169484f1586
+    m_Id: e5593895-c3f0-4cc2-8af2-d3927243d1b8
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  fire:
+    m_Name: Fire
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 2612824e-6f1e-4cc4-a865-79238262f0fa
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  ability1:
+    m_Name: Ability 1
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: b29f2b90-74f3-450e-ab29-e1546c0f5a2c
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  ability2:
+    m_Name: Ability 2
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 314fafc1-27b9-4c2e-bfbc-c4c4485dc0bf
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  changeelement:
+    m_Name: Changeelement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 36f39902-579c-4f12-9130-50d0787c76e0
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
