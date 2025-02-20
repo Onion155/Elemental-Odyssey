@@ -917,14 +917,45 @@ MonoBehaviour:
   ElementalAbilities1:
   - {fileID: 8045060014928182798, guid: 8ec788ef1e5457f4fb6b580f203bb1e7, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8857043692568084133, guid: 991a82bf57271df47ba50ff120f0901c, type: 3}
+  - {fileID: 5192847333089589344, guid: 78c2a813b01352f4ebc8ff65da8abc57, type: 3}
   ElementalAbilities2:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   abilitynum: 0
+--- !u!1 &432282024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 432282025}
+  m_Layer: 0
+  m_Name: AirDash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &432282025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432282024}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.889, y: 2.11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &477160665
 GameObject:
   m_ObjectHideFlags: 0
@@ -10743,6 +10774,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 477160666}
   - {fileID: 619394802}
   - {fileID: 552924171}
   - {fileID: 2014056771}
@@ -10751,6 +10783,6 @@ SceneRoots:
   - {fileID: 171078087}
   - {fileID: 5295597285728553311}
   - {fileID: 86583633}
-  - {fileID: 477160666}
   - {fileID: 1224411249}
   - {fileID: 1805695686}
+  - {fileID: 432282025}

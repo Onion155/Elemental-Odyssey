@@ -23,7 +23,7 @@ public class ProjectileBase : MonoBehaviour
 
     protected void CheckDirection()
     {
-        if (Rb.transform.lossyScale.x == 2)
+        if (Rb.transform.lossyScale.x >= 0)
         {
             // should go left
             ProjectileSpeed *= -1;

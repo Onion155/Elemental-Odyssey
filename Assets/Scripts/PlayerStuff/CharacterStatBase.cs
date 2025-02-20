@@ -57,5 +57,26 @@ public class CharacterStatBase : MonoBehaviour
         }
     }
 
+    public void SetMaxH(int amount)
+    {
+        if (amount < 0)
+        {
+            MaxHeath = 1;
+        }
+        else { MaxHeath = amount; }
+        if (CurrentHeath > MaxHeath)
+        {
+            CurrentHeath = MaxHeath;
+            healthDisplay.SetValue(CurrentHeath);
+        }
+        healthDisplay.SetMax(MaxHeath);
+       
+    }
+    
+    public void SetDefense(int amount)
+    {
+        defenece = amount;
+    }
+
    
 }

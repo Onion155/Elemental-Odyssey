@@ -201,10 +201,12 @@ public class PlayerController : MonoBehaviour
     {
         if (AbilityTimer1 <= 0)
         {
-
             Debug.Log("Ability1");
             GameObject newProjectile = Instantiate(Ab1, ProjectileNode);
-            newProjectile.transform.SetParent(ProjectileList);
+           if(Ab1.GetComponent<ProjectileBase>() != null) // if not a projectile it should sort its own parent out if needed
+            {
+                newProjectile.transform.SetParent(ProjectileList);
+            }
             AbilityTimer1 = 1000;
         }
     }

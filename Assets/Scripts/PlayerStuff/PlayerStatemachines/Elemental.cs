@@ -46,7 +46,7 @@ public class Elemental : MonoBehaviour
 
     private void Update()
     {
-        StateMachine.CurrentElement.FrameUpdate(); // allows you to use update in whatever class your in 
+        StateMachine.CurrentElement.FrameUpdate(); // allows you to use update in whatever class your in
     }
 
     public void CheckState()

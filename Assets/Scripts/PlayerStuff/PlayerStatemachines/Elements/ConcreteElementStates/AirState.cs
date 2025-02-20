@@ -8,8 +8,14 @@ public class AirState : ElementalState
     public override void EnterState()
     {
         base.EnterState();
-        element.PC.Projectile = element.ElementalBullets[1];
         Debug.Log("Current Element: Air");
+
+        //ability and bullet
+        element.PC.Projectile = element.ElementalBullets[1];
+        
+        // stats
+        element.PlayerStats.SetMaxH(70);
+        element.PlayerStats.SetDefense(1);
     }
 
     public override void ExitState()

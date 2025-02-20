@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\Elements\ConcreteElementStates\EarthState.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\EnemyStateMachine.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyAttackState.cs" />
+    <Compile Include="Assets\Boulder.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyChaseState.cs" />
     <Compile Include="Assets\Scripts\UI\GameManagerScript.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\EnemyTypes\Spider.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\ElementalState.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\TriggerChecks\EnemyAggroCheck.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerControls.cs" />
+    <Compile Include="Assets\BuriningRadius.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\IDamageAble.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemieList.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyIdleState.cs" />
