@@ -10762,6 +10762,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7814863425057838232, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8757622470575662416, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
