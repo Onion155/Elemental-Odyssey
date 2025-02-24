@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|c:\\users\\marsgaming155\\desktop\\unity folder\\elemental odyssey\\assets\\airdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\airdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|c:\\users\\marsgaming155\\desktop\\unity folder\\elemental odyssey\\assets\\buriningradius.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\buriningradius.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\playerstatemachines\\elemental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\playerstatemachines\\elemental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\abilities\\projectilebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\abilities\\projectilebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\playerstatemachines\\elements\\concreteelementstates\\earthstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\playerstatemachines\\elements\\concreteelementstates\\earthstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|c:\\users\\marsgaming155\\desktop\\unity folder\\elemental odyssey\\assets\\scripts\\playerstuff\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\abilities\\elementalbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\abilities\\elementalbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\characterstatbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\characterstatbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\playerstatemachines\\elements\\concreteelementstates\\airstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,16 +31,24 @@
       "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\playerstatemachines\\elements\\concreteelementstates\\firestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\abilities\\elementalbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\abilities\\elementalbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\playerstatemachines\\elements\\concreteelementstates\\waterstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\playerstatemachines\\elements\\concreteelementstates\\waterstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\abilities\\projectilebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\abilities\\projectilebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\airdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\airdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|c:\\users\\marsgaming155\\desktop\\unity folder\\elemental odyssey\\assets\\waterspiritability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\waterspiritability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\playerstatemachines\\elemental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\playerstatemachines\\elemental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\characterstatbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstuff\\characterstatbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EB7D31F-F153-2F08-CD90-A949F4FB7A0A}|Assembly-CSharp.csproj|C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\assets\\scripts\\playerstuff\\playerstatemachines\\elementalstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,6 +79,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BuriningRadius.cs",
+              "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\BuriningRadius.cs",
+              "RelativeDocumentMoniker": "Assets\\BuriningRadius.cs",
+              "ToolTip": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\BuriningRadius.cs",
+              "RelativeToolTip": "Assets\\BuriningRadius.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T11:56:05.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AirDash.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\AirDash.cs",
               "RelativeDocumentMoniker": "Assets\\AirDash.cs",
@@ -79,19 +100,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T11:06:34.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AirState.cs",
-              "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elements\\ConcreteElementStates\\AirState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elements\\ConcreteElementStates\\AirState.cs",
-              "ToolTip": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elements\\ConcreteElementStates\\AirState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elements\\ConcreteElementStates\\AirState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T09:50:26.644Z",
               "EditorCaption": ""
             },
             {
@@ -109,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "WaterState.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elements\\ConcreteElementStates\\WaterState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elements\\ConcreteElementStates\\WaterState.cs",
@@ -117,11 +125,12 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elements\\ConcreteElementStates\\WaterState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T11:40:42.026Z"
+              "WhenOpened": "2025-02-19T11:40:42.026Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "ElementalBullet.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\Abilities\\ElementalBullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStuff\\Abilities\\ElementalBullet.cs",
@@ -129,19 +138,46 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerStuff\\Abilities\\ElementalBullet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T21:49:07.641Z"
+              "WhenOpened": "2025-02-19T21:49:07.641Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStuff\\PlayerController.cs",
               "ToolTip": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerStuff\\PlayerController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAwNQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwNQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-19T13:10:23.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectileBase.cs",
+              "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\Abilities\\ProjectileBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStuff\\Abilities\\ProjectileBase.cs",
+              "ToolTip": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\Abilities\\ProjectileBase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerStuff\\Abilities\\ProjectileBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T21:46:56.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WaterSpiritAbility.cs",
+              "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\WaterSpiritAbility.cs",
+              "RelativeDocumentMoniker": "Assets\\WaterSpiritAbility.cs",
+              "ToolTip": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\WaterSpiritAbility.cs",
+              "RelativeToolTip": "Assets\\WaterSpiritAbility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T10:48:14.864Z",
               "EditorCaption": ""
             },
             {
@@ -159,19 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProjectileBase.cs",
-              "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\Abilities\\ProjectileBase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStuff\\Abilities\\ProjectileBase.cs",
-              "ToolTip": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\Abilities\\ProjectileBase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerStuff\\Abilities\\ProjectileBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T21:46:56.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Elemental.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elemental.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elemental.cs",
@@ -179,12 +203,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elemental.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T11:40:02.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T11:40:02.695Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ElementalStateMachine.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\ElementalStateMachine.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\ElementalStateMachine.cs",
@@ -196,7 +219,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "AirState.cs",
+              "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elements\\ConcreteElementStates\\AirState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elements\\ConcreteElementStates\\AirState.cs",
+              "ToolTip": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elements\\ConcreteElementStates\\AirState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerStuff\\PlayerStatemachines\\Elements\\ConcreteElementStates\\AirState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T09:50:26.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "CharacterStatBase.cs",
               "DocumentMoniker": "C:\\Users\\Marsgaming155\\Desktop\\Unity folder\\Elemental Odyssey\\Assets\\Scripts\\PlayerStuff\\CharacterStatBase.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStuff\\CharacterStatBase.cs",
@@ -204,8 +240,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerStuff\\CharacterStatBase.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAgwD8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T09:54:48.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T09:54:48.992Z"
             }
           ]
         }
