@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\UI\PlayerHealthDisplay.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\RoomSpawner.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\EnemySpawnPointList.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\Abilities\AirDash.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\EnemyState.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\ITriggerCheckable.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\Destroyer.cs" />
@@ -78,32 +79,31 @@
     <Compile Include="Assets\Scripts\PlayerStuff\Abilities\ProjectileBase.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\Abilities\ElementalBullet.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\cameradoors.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\Abilities\BuriningRadius.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\Elements\ConcreteElementStates\AirState.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\CharacterStatBase.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerManaDisplay.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\Abilities\WaterWall.cs" />
-    <Compile Include="Assets\WaterSpiritAbility.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\Abilities\WaterSpiritAbility.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\ElementalStateMachine.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\IEnemyMovable.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\Elements\ConcreteElementStates\EarthState.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\EnemyStateMachine.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyAttackState.cs" />
-    <Compile Include="Assets\Boulder.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyChaseState.cs" />
     <Compile Include="Assets\Scripts\UI\GameManagerScript.cs" />
-    <Compile Include="Assets\FireSpriteAbility.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\EnemyTypes\Spider.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\Abilities\FireSpriteAbility.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\EnemyTypes\Ghost.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\EntrancesController.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\ElementalState.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\TriggerChecks\EnemyAggroCheck.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerControls.cs" />
-    <Compile Include="Assets\BuriningRadius.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\IDamageAble.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemieList.cs" />
-    <Compile Include="Assets\AirDash.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyIdleState.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\GateControler.cs" />
+    <Compile Include="Assets\Scripts\PlayerStuff\Abilities\Boulder.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\TriggerChecks\EnemyAttackDistanceCheck.cs" />
   </ItemGroup>
   <ItemGroup>

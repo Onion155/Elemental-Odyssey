@@ -12,6 +12,7 @@ public class AirState : ElementalState
 
         //ability and bullet
         element.PC.Projectile = element.ElementalBullets[1];
+        element.PC.Ab1 = element.ElementalAbilities1[1];
         
         // stats
         element.PlayerStats.SetMaxH(70);

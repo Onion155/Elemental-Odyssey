@@ -20,9 +20,12 @@ public class PlayerController : MonoBehaviour
     public Transform ProjectileList;
     public Transform ProjectileNode;
     public Transform UtilNode;
+
+    [Header("Elemental Abilitys")]
     public Elemental element;
     public GameObject Ab1;
     public GameObject Ab2;
+    public float DashDirection = 0;
 
     [Header("PlayerInputControls")]
     public PlayerControls PlayerControls;
@@ -98,7 +101,7 @@ public class PlayerController : MonoBehaviour
         GetInput();
         ApplyMovement();
 
-        if (Firetimer > 0) // these if statements might need to be optimised
+        if (Firetimer > 0) // these will be replace with the mana later on
          {
             Firetimer--;
          }
@@ -127,24 +130,21 @@ public class PlayerController : MonoBehaviour
     {
         // move around using new unity input system
         moveDirection = move.ReadValue<Vector2>();
-
     }
 
-    
     // apply movement
     void ApplyMovement()
     {
         if (Mathf.Abs(moveDirection.x) > 0){
-            Body.velocity = new Vector2(moveDirection.x * groundSpeed, Body.velocity.y);// this is to make it so it only changes the x axis and leaves the y axis if it is unchanged
-
+            Body.velocity = new Vector2(moveDirection.x * groundSpeed + DashDirection , Body.velocity.y);// this is to make it so it only changes the x axis and leaves the y axis
             FlipSprite();
+            DashDirection = 0;
         }
 
         if (Input.GetButton("Jump") && grounded){ // this is still done with old input system
             Body.velocity = new Vector2(Body.velocity.x, jumpSpeed);
             animator.SetBool("isJumping", !grounded);
         }
-
     }
     
     // checks if touching ground layer
