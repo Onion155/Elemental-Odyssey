@@ -51,10 +51,11 @@ public class CharacterStatBase : MonoBehaviour
         CurrentHeath += amount;
         healthDisplay.SetValue(CurrentHeath);
 
-        if (CurrentHeath < MaxHeath)
+        if (CurrentHeath > MaxHeath)
         {
             CurrentHeath = MaxHeath;
         }
+        Debug.Log("Healed Player +" + amount);
     }
 
     public void SetMaxH(int amount)

@@ -14,6 +14,7 @@ public class WaterState : ElementalState
         // ability and bullets
         element.PC.Projectile = element.ElementalBullets[0];
         element.PC.Ab1 = element.ElementalAbilities1[0];
+        element.PC.Ab2 = element.ElementalAbilities2[0];
 
         // stats
         element.PlayerStats.SetMaxH(150);
