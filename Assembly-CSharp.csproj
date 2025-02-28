@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\RoomStuff\EnemySpawnPointList.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\Abilities\AirDash.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\EnemyState.cs" />
+    <Compile Include="Assets\Scripts\ChatBotScripts\LocalChatbotOllama.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\ITriggerCheckable.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\Destroyer.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Base\Enemy.cs" />
@@ -91,15 +92,18 @@
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\EnemyStateMachine.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyAttackState.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyChaseState.cs" />
+    <Compile Include="Assets\Scripts\ChatBotScripts\NpcBase.cs" />
     <Compile Include="Assets\Scripts\UI\GameManagerScript.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\EnemyTypes\Spider.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\Abilities\FireSpriteAbility.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\EnemyTypes\Ghost.cs" />
+    <Compile Include="Assets\Scripts\ChatBotScripts\LocalAIClientOllama.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\EntrancesController.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\ElementalState.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\TriggerChecks\EnemyAggroCheck.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\IDamageAble.cs" />
+    <Compile Include="Assets\Scripts\ChatBotScripts\DwarfNpc.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemieList.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyIdleState.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\GateControler.cs" />
@@ -606,6 +610,10 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json\Runtime\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Android.Types">
