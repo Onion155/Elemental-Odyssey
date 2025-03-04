@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,6 +16,8 @@ public class LocalChatbotOllama : MonoBehaviour
     private LocalAIClientOllama localAIClient;
     [ SerializeField ] [TextArea(15,20)]
     private string context = ""; // how it should behave
+    private string AIName = "";
+    private string PlayerName = "Player";
     private List<string> conversationHistory = new List<string>();
    // private int maxHistorySize = 10; // Limit to the last 10 exchanges for performance
 
@@ -24,7 +27,7 @@ public class LocalChatbotOllama : MonoBehaviour
         localAIClient = GetComponent<LocalAIClientOllama>();
         // Initial assistant message to set the tone
         responseText.text = "Chatbot Ready! Type a message."; // change for whateverr NPC will be talking
-        conversationHistory.Add("Assistant: " + context);
+        conversationHistory.Add(AIName + ": " + context);
     }
 
 
@@ -39,7 +42,7 @@ public class LocalChatbotOllama : MonoBehaviour
         }
 
         // Add the user’s input to the conversation history and display it immediately
-        conversationHistory.Add($"User: {userInput}");
+        conversationHistory.Add($"<color=#FF0000>{PlayerName}</color>: {userInput}");
         responseText.text = string.Join("\n", conversationHistory);
 
         // Scroll to the bottom to show the user's message
@@ -59,7 +62,7 @@ public class LocalChatbotOllama : MonoBehaviour
         string assistantResponse = await localAIClient.SendMessage(currentContext);
 
         // Add the assistant’s response to the conversation history
-        conversationHistory.Add($"Assistant: {assistantResponse.Trim()}");
+        conversationHistory.Add($"{AIName}: {assistantResponse.Trim()}");
 
         // Update the responseText field to show the entire conversation history including the new response
         responseText.text = string.Join("\n", conversationHistory);
@@ -79,6 +82,9 @@ public class LocalChatbotOllama : MonoBehaviour
     {
         context = Context;
     }
-   
+    public void SetName(string Name)
+    {
+        AIName = $"<color=#0000FF>{Name}</color>"; // this changes the colour only for this string 
+    }
 
 }
