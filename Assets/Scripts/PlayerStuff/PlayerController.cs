@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     #region Public variable
     [Header("Refernaces")]
     public Rigidbody2D Body;
+    public NpcBase ChatBox;
 
     [Header("LayerMasks")]
     public BoxCollider2D Groundcheck;
@@ -80,7 +81,6 @@ public class PlayerController : MonoBehaviour
         changeelement = PlayerControls.Player.ChangeElement;
         changeelement.Enable();
         changeelement.performed += ChangeElement;
-
     }
     private void OnDisable()
     {
@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
-    // Update is called once per frame
+
     void Update()
     {
         GetInput();
@@ -233,5 +233,7 @@ public class PlayerController : MonoBehaviour
 
         element.CheckState();
     }
+
+    
     #endregion
 }
