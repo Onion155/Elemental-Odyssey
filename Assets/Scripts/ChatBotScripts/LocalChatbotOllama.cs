@@ -17,9 +17,9 @@ public class LocalChatbotOllama : MonoBehaviour
     [ SerializeField ] [TextArea(15,20)]
     private string context = ""; // how it should behave
     private string AIName = "";
-    private string PlayerName = "Player";
+    private string PlayerName = $"<color=#FED8B1>{ "Player" }</color>";
     private List<string> conversationHistory = new List<string>();
-   // private int maxHistorySize = 10; // Limit to the last 10 exchanges for performance
+    private int maxHistorySize = 3; // Limit to the last 10 exchanges for performance
 
     void Start()
     {
@@ -27,7 +27,7 @@ public class LocalChatbotOllama : MonoBehaviour
         localAIClient = GetComponent<LocalAIClientOllama>();
         // Initial assistant message to set the tone
         responseText.text = "Chatbot Ready! Type a message."; // change for whateverr NPC will be talking
-        conversationHistory.Add(AIName + ": " + context);
+        AddHistory(AIName + ": " + context);
     }
 
 
@@ -42,7 +42,7 @@ public class LocalChatbotOllama : MonoBehaviour
         }
 
         // Add the user’s input to the conversation history and display it immediately
-        conversationHistory.Add($"<color=#FF0000>{PlayerName}</color>: {userInput}");
+       AddHistory($"{PlayerName}: {userInput}");
         responseText.text = string.Join("\n", conversationHistory);
 
         // Scroll to the bottom to show the user's message
@@ -62,7 +62,7 @@ public class LocalChatbotOllama : MonoBehaviour
         string assistantResponse = await localAIClient.SendMessage(currentContext);
 
         // Add the assistant’s response to the conversation history
-        conversationHistory.Add($"{AIName}: {assistantResponse.Trim()}");
+        AddHistory($"{AIName}: {assistantResponse.Trim()}");
 
         // Update the responseText field to show the entire conversation history including the new response
         responseText.text = string.Join("\n", conversationHistory);
@@ -84,7 +84,22 @@ public class LocalChatbotOllama : MonoBehaviour
     }
     public void SetName(string Name)
     {
-        AIName = $"<color=#0000FF>{Name}</color>"; // this changes the colour only for this string 
+        AIName = $"<color=#Add8e6>{Name}</color>"; // this changes the colour only for this string, light blue
     }
+
+    public void ClearHistory()// clears the list for the chat history ( this is used in the npc base)
+    {
+        conversationHistory.Clear();
+    }
+
+    private void AddHistory(string Context) // this will keep a limit on the conversation history
+    {
+        if (conversationHistory.Count > maxHistorySize)
+        {
+            conversationHistory.RemoveAt(0);
+        }
+        conversationHistory.Add(Context);
+    }
+
 
 }

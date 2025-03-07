@@ -18,6 +18,7 @@ public class NpcBase : MonoBehaviour
     private void ActivateChatBot()
     {
         // if this is active the player should not be able to move
+        AiScript.ClearHistory(); // this clears the old chat log before showing the player the screen
         ChatBoxOBJ.SetActive(true); // activate the ai
 
         AiScript.SetContext(Context); // give context 
