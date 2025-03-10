@@ -37,7 +37,7 @@ public class LocalChatbotOllama : MonoBehaviour
         string userInput = userInputField.text.Trim();
         if (string.IsNullOrWhiteSpace(userInput))
         {
-            responseText.text = "Please enter a valid message.";
+            //responseText.text = "Please enter a valid message.";
             return;
         }
 
