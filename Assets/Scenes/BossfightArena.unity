@@ -624,6 +624,7 @@ GameObject:
   - component: {fileID: 813289790}
   - component: {fileID: 813289789}
   - component: {fileID: 813289791}
+  - component: {fileID: 813289792}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -641,7 +642,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.31, y: 1.31, z: 1.31}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1677044745}
@@ -676,12 +677,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.000000029802322}
-  m_Radius: 0.14
+  m_Radius: 0.4
 --- !u!212 &813289790
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -764,6 +765,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &813289792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813289787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2db5d7e04ff1440b295e9aeb6f9b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 30
 --- !u!1 &891911076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,6 +1167,7 @@ GameObject:
   - component: {fileID: 1447900179}
   - component: {fileID: 1447900178}
   - component: {fileID: 1447900180}
+  - component: {fileID: 1447900181}
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
@@ -1169,8 +1184,8 @@ Transform:
   m_GameObject: {fileID: 1447900176}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.36, y: -0.3, z: 0}
-  m_LocalScale: {x: 1.06, y: 1.06, z: 1.06}
+  m_LocalPosition: {x: -2, y: -2, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1677044745}
@@ -1205,12 +1220,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.000000029802322}
-  m_Size: {x: 0.17, y: 0.23}
+  m_Size: {x: 0.56, y: 0.23}
   m_Direction: 0
 --- !u!212 &1447900179
 SpriteRenderer:
@@ -1261,7 +1276,7 @@ SpriteRenderer:
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.21, y: 0.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1294,6 +1309,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1447900181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447900176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2db5d7e04ff1440b295e9aeb6f9b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 20
 --- !u!1 &1587675291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,7 +1701,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.54, y: 2.8, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 0.67, y: 0.67, z: 0.67}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 813289788}
@@ -1715,6 +1743,7 @@ GameObject:
   - component: {fileID: 1717543512}
   - component: {fileID: 1717543511}
   - component: {fileID: 1717543513}
+  - component: {fileID: 1717543514}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
@@ -1731,8 +1760,8 @@ Transform:
   m_GameObject: {fileID: 1717543509}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.36, y: -0.3, z: 0}
-  m_LocalScale: {x: 1.06, y: 1.06, z: 1.06}
+  m_LocalPosition: {x: 2, y: -2, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1677044745}
@@ -1767,12 +1796,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.000000029802322}
-  m_Size: {x: 0.17, y: 0.23}
+  m_Size: {x: 0.56, y: 0.23}
   m_Direction: 0
 --- !u!212 &1717543512
 SpriteRenderer:
@@ -1856,6 +1885,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1717543514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717543509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2db5d7e04ff1440b295e9aeb6f9b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 20
 --- !u!114 &1761252982 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4448571255700123002, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
