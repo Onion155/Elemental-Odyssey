@@ -105,6 +105,7 @@
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Interfaces\IDamageAble.cs" />
     <Compile Include="Assets\Scripts\ChatBotScripts\DwarfNpc.cs" />
+    <Compile Include="Assets\Scripts\BossScripts\BossParts.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemieList.cs" />
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\StateMachine\ConcreteStates\EnemyIdleState.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\GateControler.cs" />

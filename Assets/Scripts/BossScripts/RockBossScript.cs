@@ -7,6 +7,7 @@ public class RockBossScript : MonoBehaviour
     public Rigidbody2D rightHand;
     public float moveSpeed = 5f;
     public float stopDistance = 0.5f;
+   
 
     private Transform player;
     private Rigidbody2D[] bodyParts;
@@ -32,7 +33,7 @@ public class RockBossScript : MonoBehaviour
         while (true)
         {
             Rigidbody2D currentPart = bodyParts[currentPartIndex];
-            Vector3 targetPosition = player.position;
+            Vector3 targetPosition = player.position + new Vector3 (0,-0.5f,0);
             Vector3 originalPosition = originalPositions[currentPartIndex];
 
             // Move current part toward the target
@@ -59,4 +60,6 @@ public class RockBossScript : MonoBehaviour
             currentPartIndex = (currentPartIndex + 1) % bodyParts.Length;
         }
     }
+
+    
 }
