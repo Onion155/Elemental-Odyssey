@@ -37,24 +37,24 @@ public class CharacterStatBase : MonoBehaviour
     {
         amount -= defenece;
         CurrentHeath -= amount;
-        healthDisplay.SetValue(CurrentHeath);
-
+       
         if (CurrentHeath <= 0)
         {
             CurrentHeath = 0;
             Debug.Log(gameObject.name +  " died");
         }
+        healthDisplay.SetValue(CurrentHeath);
     }
 
     public void Heal(int amount)
     {
         CurrentHeath += amount;
-        healthDisplay.SetValue(CurrentHeath);
-
+        
         if (CurrentHeath > MaxHeath)
         {
             CurrentHeath = MaxHeath;
         }
+        healthDisplay.SetValue(CurrentHeath);
         Debug.Log("Healed Player +" + amount);
     }
 
