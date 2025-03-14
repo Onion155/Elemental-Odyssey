@@ -15,11 +15,14 @@ public class EntrancesController : MonoBehaviour
     // camera controls
     public Transform cameranode;
     private Transform MainCamera;
+    private CameraControls CameraControler;
 
     [Header("Enemie")]
     public bool EnemiesSpawned = false;
     public List<SpawnEnemy> EnemyNodes = new List<SpawnEnemy>(); // all the spawning points for the enemies in a floor
     private Transform EnemieList; // all the enemies for each floor will be in here
+
+    private bool RoomCleared = false;
 
 
     void Start()
@@ -27,28 +30,27 @@ public class EntrancesController : MonoBehaviour
         PlayerHitbox = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>();
         MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
         EnemieList = transform.parent.GetChild(1); // make sure that the "enemies" is in the second position (dont forget the platforms are spawned as first always)
-
+        CameraControler = MainCamera.gameObject.GetComponent<CameraControls>();
        Invoke("SetEnemyNodes",1.0f);
 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!EnemiesSpawned)
+        if (collision == PlayerHitbox)
         {
-            if (collision == PlayerHitbox)
+            SetCamera();
+            if(!RoomCleared)
             {
                 Invoke("ActivateDoors", 1.0f);
-                SetCamera();
-                Debug.Log("Settings " + MainCamera.name + " to " + cameranode.transform);
-
             }
-        }
+            Debug.Log("Settings " + MainCamera.name + " to " + cameranode.transform);
+            }
     }
 
     private void Update()
     {
-        if (EnemiesSpawned)
+        if (EnemiesSpawned && !RoomCleared)
         {
             if (EnemieList.transform.childCount <= 0)
             {
@@ -62,33 +64,37 @@ public class EntrancesController : MonoBehaviour
     {
         int Door = 0;
         int Enemy = 0;
-        foreach (GameObject t in Doors) // instead of doing this create the doors before hand and set them to active or not
+        foreach (GameObject t in Doors) // active door
         {
             Doors[Door].SetActive(true);
             Door++;
         }
-        foreach(SpawnEnemy i in EnemyNodes)
+        
+        foreach (SpawnEnemy i in EnemyNodes) // spawn enemies
         {
             Debug.Log("Attempting to spawned enemy: " + Enemy);
             EnemyNodes[Enemy].Spawn(EnemieList);
             Enemy++;
+                
         }
-       EnemiesSpawned = true;
+        EnemiesSpawned = true;
     }
     private void SetCamera()
     {
         MainCamera.position = new Vector3(cameranode.position.x, cameranode.position.y , MainCamera.position.z);
+
+        CameraControler.SetLimits(new Vector2(cameranode.position.x, cameranode.position.x), new Vector2(cameranode.position.y, cameranode.position.y));
     }
 
-    private void DestroyDoors()
+    private void DestroyDoors() // this is called when room has been cleared
     {
         int Door = 0;
-        foreach (GameObject t in Doors) // instead of doing this create the doors before hand and set them to active or not
+        foreach (GameObject t in Doors) 
         {
-            Destroy(Doors[Door]);
+            Doors[Door].SetActive(false);
             Door++;
         }
-        Destroy(gameObject);
+        RoomCleared = true; // this will mean we dont try to spawn enemies in again
     }
 
     private void SetEnemyNodes()
