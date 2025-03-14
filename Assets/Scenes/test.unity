@@ -922,9 +922,9 @@ MonoBehaviour:
   - {fileID: 1945794687718583254, guid: 289380de2fa3ea4499388bcb8c2ea293, type: 3}
   - {fileID: 6306673393197568273, guid: c291d7d446756ce4490a9cddaf361f8f, type: 3}
   InnerRooms:
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
+  - {fileID: 8292623532845677551, guid: dd9b97d927ff55f489f043d6b2407800, type: 3}
+  - {fileID: 8292623532845677551, guid: dd9b97d927ff55f489f043d6b2407800, type: 3}
+  - {fileID: 8292623532845677551, guid: dd9b97d927ff55f489f043d6b2407800, type: 3}
   closedRoom: {fileID: 3772104892220248037, guid: d4ccac0281c02c34899054c9b001c6f5, type: 3}
 --- !u!4 &1644862773
 Transform:

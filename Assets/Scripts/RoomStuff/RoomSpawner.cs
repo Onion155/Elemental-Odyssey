@@ -36,11 +36,9 @@ public class RoomSpawner : MonoBehaviour
             {
                 // spawn room with top door
                 rand = Random.Range(0, templates.topRooms.Length);
-                newRoom = Instantiate(templates.topRooms[rand], transform.position , templates.topRooms[rand].transform.rotation); 
+                newRoom = Instantiate(templates.topRooms[rand], transform.position , templates.topRooms[rand].transform.rotation);
 
-                newInternalTemplate = Instantiate(templates.InnerRooms[rand], transform.position, templates.InnerRooms[rand].transform.rotation);
-                newInternalTemplate.transform.SetParent(newRoom.transform);
-                newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
+                CreateInnerRoom();
 
                 newRoom.transform.SetParent(parentObject);
             }
@@ -50,9 +48,7 @@ public class RoomSpawner : MonoBehaviour
                 rand = Random.Range(0, templates.bottomRooms.Length);
                 newRoom =  Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation);
 
-                newInternalTemplate = Instantiate(templates.InnerRooms[rand], transform.position, templates.InnerRooms[rand].transform.rotation);
-                newInternalTemplate.transform.SetParent(newRoom.transform);
-                newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
+                CreateInnerRoom();
 
                 newRoom.transform.SetParent(parentObject);
             }
@@ -62,9 +58,7 @@ public class RoomSpawner : MonoBehaviour
                 rand = Random.Range(0, templates.rightRooms.Length);
                 newRoom = Instantiate(templates.rightRooms[rand], transform.position , templates.rightRooms[rand].transform.rotation);
 
-                newInternalTemplate = Instantiate(templates.InnerRooms[rand], transform.position, templates.InnerRooms[rand].transform.rotation);
-                newInternalTemplate.transform.SetParent(newRoom.transform);
-                newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
+                CreateInnerRoom();
 
                 newRoom.transform.SetParent(parentObject);
             }
@@ -74,9 +68,7 @@ public class RoomSpawner : MonoBehaviour
                 rand = Random.Range(0, templates.leftRooms.Length);
                 newRoom = Instantiate(templates.leftRooms[rand], transform.position , templates.leftRooms[rand].transform.rotation);
 
-                newInternalTemplate = Instantiate(templates.InnerRooms[rand], transform.position, templates.InnerRooms[rand].transform.rotation);
-                newInternalTemplate.transform.SetParent(newRoom.transform);
-                newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
+                CreateInnerRoom();
 
                 newRoom.transform.SetParent(parentObject);
             }
@@ -97,5 +89,12 @@ public class RoomSpawner : MonoBehaviour
             }
             spawned = true;
         }
+    }
+
+    private void CreateInnerRoom()
+    {
+        newInternalTemplate = Instantiate(templates.InnerRooms[rand], transform.position, templates.InnerRooms[rand].transform.rotation);
+        newInternalTemplate.transform.SetParent(newRoom.transform);
+        newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
     }
 }

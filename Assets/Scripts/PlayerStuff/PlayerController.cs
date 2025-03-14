@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     private bool grounded; // touching ground is true
     private bool slowed; // this will slow them down and prevent them from jumping
     public float groundSpeed = 8f; // how fast the player can move
-    private float jumpSpeed = 15f; // fast the player jumps
+    private const float jumpSpeed = 15f; // fast the player jumps
 
     private Vector2 moveDirection;
    
