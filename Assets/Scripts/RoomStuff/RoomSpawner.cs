@@ -12,7 +12,6 @@ public class RoomSpawner : MonoBehaviour
 
     private Transform parentObject;
     private RoomTemplates templates;
-    private EnemySpawnPointList InnerTemplate;
     private GameObject newRoom;
     private GameObject newInternalTemplate;
 
@@ -26,9 +25,8 @@ public class RoomSpawner : MonoBehaviour
         Destroy(gameObject, waitTime); // destroys the unneccasary nodes once they have been used 
 
       templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>(); // outer sections of the rooms
-      InnerTemplate = GameObject.FindGameObjectWithTag("Rooms").GetComponent<EnemySpawnPointList>(); // referance to the inner sections of the rooms
       parentObject = GameObject.FindGameObjectWithTag("RoomSeed").GetComponent<Transform>(); // this is a referance to the grid 
-        Invoke("Spawn", 0.1f);
+      Invoke("Spawn", 0.1f);
     }
     private void Spawn()
     {
@@ -39,9 +37,11 @@ public class RoomSpawner : MonoBehaviour
                 // spawn room with top door
                 rand = Random.Range(0, templates.topRooms.Length);
                 newRoom = Instantiate(templates.topRooms[rand], transform.position , templates.topRooms[rand].transform.rotation); 
-                newInternalTemplate = Instantiate(InnerTemplate.topRooms[rand], transform.position, InnerTemplate.topRooms[rand].transform.rotation);
+
+                newInternalTemplate = Instantiate(templates.InnerRooms[rand], transform.position, templates.InnerRooms[rand].transform.rotation);
                 newInternalTemplate.transform.SetParent(newRoom.transform);
                 newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
+
                 newRoom.transform.SetParent(parentObject);
             }
             else if (openingDirection == 2)
@@ -49,9 +49,11 @@ public class RoomSpawner : MonoBehaviour
                 //spawn room with bottom door
                 rand = Random.Range(0, templates.bottomRooms.Length);
                 newRoom =  Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation);
-                newInternalTemplate = Instantiate(InnerTemplate.topRooms[rand], transform.position, InnerTemplate.topRooms[rand].transform.rotation);
+
+                newInternalTemplate = Instantiate(templates.InnerRooms[rand], transform.position, templates.InnerRooms[rand].transform.rotation);
                 newInternalTemplate.transform.SetParent(newRoom.transform);
                 newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
+
                 newRoom.transform.SetParent(parentObject);
             }
             else if (openingDirection == 3)
@@ -59,9 +61,11 @@ public class RoomSpawner : MonoBehaviour
                 // spawn room with right door
                 rand = Random.Range(0, templates.rightRooms.Length);
                 newRoom = Instantiate(templates.rightRooms[rand], transform.position , templates.rightRooms[rand].transform.rotation);
-                newInternalTemplate = Instantiate(InnerTemplate.topRooms[rand], transform.position, InnerTemplate.topRooms[rand].transform.rotation);
+
+                newInternalTemplate = Instantiate(templates.InnerRooms[rand], transform.position, templates.InnerRooms[rand].transform.rotation);
                 newInternalTemplate.transform.SetParent(newRoom.transform);
                 newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
+
                 newRoom.transform.SetParent(parentObject);
             }
             else if (openingDirection == 4)
@@ -69,10 +73,12 @@ public class RoomSpawner : MonoBehaviour
                 //spawn room with left door
                 rand = Random.Range(0, templates.leftRooms.Length);
                 newRoom = Instantiate(templates.leftRooms[rand], transform.position , templates.leftRooms[rand].transform.rotation);
-                newInternalTemplate = Instantiate(InnerTemplate.topRooms[rand], transform.position, InnerTemplate.topRooms[rand].transform.rotation);
+
+                newInternalTemplate = Instantiate(templates.InnerRooms[rand], transform.position, templates.InnerRooms[rand].transform.rotation);
                 newInternalTemplate.transform.SetParent(newRoom.transform);
                 newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
-                 newRoom.transform.SetParent(parentObject);
+
+                newRoom.transform.SetParent(parentObject);
             }
             spawned = true;
         }

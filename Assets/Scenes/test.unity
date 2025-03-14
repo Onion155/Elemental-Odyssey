@@ -837,19 +837,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8757622470575662416, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8757622470575662416, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9170136453301731966, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9170136453301731966, guid: 36a81ad2d1d83d740aeedb45ce321a55, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -882,7 +882,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1644862773}
   - component: {fileID: 1644862772}
-  - component: {fileID: 1644862774}
   m_Layer: 0
   m_Name: RoomTemplates
   m_TagString: Rooms
@@ -922,6 +921,10 @@ MonoBehaviour:
   - {fileID: 2027453526245139991, guid: 59a999edcd3ca8b4fbf21c69355cd931, type: 3}
   - {fileID: 1945794687718583254, guid: 289380de2fa3ea4499388bcb8c2ea293, type: 3}
   - {fileID: 6306673393197568273, guid: c291d7d446756ce4490a9cddaf361f8f, type: 3}
+  InnerRooms:
+  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
+  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
+  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
   closedRoom: {fileID: 3772104892220248037, guid: d4ccac0281c02c34899054c9b001c6f5, type: 3}
 --- !u!4 &1644862773
 Transform:
@@ -938,38 +941,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1644862774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644862771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb9c88fe2cd5855409f50ea15fe8e6a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bottomRooms:
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  topRooms:
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  leftRooms:
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  rightRooms:
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
-  - {fileID: 3672959797245504400, guid: c21bf136ac6fa634abbf34b3a4e7d8de, type: 3}
 --- !u!1001 &1666398581
 PrefabInstance:
   m_ObjectHideFlags: 0
