@@ -94,7 +94,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.284176, y: -0.108009994, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4721731225423498460}
@@ -172,7 +172,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 4
   m_Material: {fileID: 6200000, guid: 3e2007549942a004cbc4bb6e2b2bcef4, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Body: {fileID: 6399950708003131779}
+  ChatBox: {fileID: 0}
   Groundcheck: {fileID: 74449958795346072}
   GroundMask:
     serializedVersion: 2
@@ -303,6 +304,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  groundSpeed: 8
 --- !u!114 &99965466849652664
 MonoBehaviour:
   m_ObjectHideFlags: 0

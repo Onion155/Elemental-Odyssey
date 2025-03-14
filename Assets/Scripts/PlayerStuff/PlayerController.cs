@@ -40,8 +40,8 @@ public class PlayerController : MonoBehaviour
     private float groundDecay = 0.712f;// slowing effect for smooth movement
     private bool grounded; // touching ground is true
     private bool slowed; // this will slow them down and prevent them from jumping
-    private float groundSpeed = 5f; // how fast the player can move
-    private float jumpSpeed = 10f; // fast the player jumps
+    public float groundSpeed = 8f; // how fast the player can move
+    private float jumpSpeed = 15f; // fast the player jumps
 
     private Vector2 moveDirection;
    
@@ -167,7 +167,7 @@ public class PlayerController : MonoBehaviour
         // this applys friction 
         else if (grounded && Body.velocity.y <= 0)
         {
-            groundSpeed = 5f;
+            groundSpeed = 8f;
             Body.velocity *= groundDecay;// checks if player is in contact with ground layer if they are they will get drag(slowdown over time)
         }
         

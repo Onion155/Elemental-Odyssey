@@ -72,7 +72,7 @@ public class RoomSpawner : MonoBehaviour
                 newInternalTemplate = Instantiate(InnerTemplate.topRooms[rand], transform.position, InnerTemplate.topRooms[rand].transform.rotation);
                 newInternalTemplate.transform.SetParent(newRoom.transform);
                 newInternalTemplate.transform.SetAsFirstSibling(); // sets it to the first position
-                newRoom.transform.SetParent(parentObject);
+                 newRoom.transform.SetParent(parentObject);
             }
             spawned = true;
         }
