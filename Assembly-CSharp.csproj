@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Enemystuff\EnemyStateMachineStuff\Base\Enemy.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\Elements\ConcreteElementStates\FireState.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\Abilities\ProjectileBase.cs" />
+    <Compile Include="Assets\Scripts\UI\CameraControls.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\Abilities\ElementalBullet.cs" />
     <Compile Include="Assets\Scripts\RoomStuff\cameradoors.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\Abilities\BuriningRadius.cs" />
