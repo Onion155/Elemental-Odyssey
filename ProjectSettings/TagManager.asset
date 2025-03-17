@@ -8,7 +8,7 @@ TagManager:
   - Rooms
   - RoomSeed
   - EnemyList
-  - Platforms
+  - Platform
   layers:
   - Default
   - TransparentFX
