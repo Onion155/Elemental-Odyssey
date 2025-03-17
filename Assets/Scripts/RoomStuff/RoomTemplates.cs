@@ -8,6 +8,9 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] leftRooms;
     public GameObject[] rightRooms;
 
+    [Header ("InnertSections")]
+    public GameObject[] innerSections;
+
     [Header("Walls")]
     public GameObject closedRoom;
 }

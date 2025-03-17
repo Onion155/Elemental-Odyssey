@@ -333,11 +333,11 @@ PrefabInstance:
       objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 3896001230777534722, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.9153085
+      value: -3.47
       objectReference: {fileID: 0}
     - target: {fileID: 3896001230777534722, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.21
+      value: 15.58
       objectReference: {fileID: 0}
     - target: {fileID: 3896001230777534722, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -929,6 +929,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 3912156859158233385, guid: 2c74eaba6941ab449abbd940acb0a56b, type: 3}
   abilitynum: 0
+--- !u!50 &332256211 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 6399950708003131779, guid: 51dc2f8b518095f41b21c9ea9098a34b, type: 3}
+  m_PrefabInstance: {fileID: 86583633}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &477160665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,7 +1242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b227062ffaa4941864b34902db86bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Player: {fileID: 332256211}
   GateToo: {fileID: 1473708175}
   rightside: 0
 --- !u!1 &670540273
@@ -2457,7 +2462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b227062ffaa4941864b34902db86bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Player: {fileID: 332256211}
   GateToo: {fileID: 1827706041}
   rightside: 1
 --- !u!1 &1473708172

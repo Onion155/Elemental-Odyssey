@@ -101,27 +101,27 @@ public class EntrancesController : MonoBehaviour
     {
         // Get the parent object
         Transform Platform = transform.parent.GetChild(0);
-        Debug.Log("--------------------------");
-        Debug.Log(Platform.name);
+       // Debug.Log("--------------------------");
+       // Debug.Log(Platform.name);
 
-        Debug.Log("Attempting to set enemies");
+       // Debug.Log("Attempting to set enemies");
   
         // Loop through all child objects of the parent object
         foreach (Transform child in Platform) // search platform children 
         {
-            Debug.Log("bloob");
+           
             if (child.name == "EnemyNode") // if a node add it 
             {
-                Debug.Log("blub");
+               
                 SpawnEnemy spawnEnemy = child.gameObject.GetComponent<SpawnEnemy>();
 
                 if (spawnEnemy != null)
                 {
                     EnemyNodes.Add(spawnEnemy);
-                    Debug.Log($"EnemyNodes has obtained: {EnemyNodes.Count} enemies");
+                   // Debug.Log($"EnemyNodes has obtained: {EnemyNodes.Count} enemies");
                 }
             }
         }
-        Debug.Log("--------------------------");
+       // Debug.Log("--------------------------");
     }
 }
