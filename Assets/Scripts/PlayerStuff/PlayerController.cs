@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Xml.Serialization;
 using TMPro;
 using Unity.VisualScripting;
@@ -44,7 +45,10 @@ public class PlayerController : MonoBehaviour
     private const float jumpSpeed = 15f; // fast the player jumps
 
     private Vector2 moveDirection;
-   
+    private GameObject currentPlatform;
+    private BoxCollider2D playercollider;
+
+
     private int Firetimer;
     private int AbilityTimer1;
     private int AbilityTimer2;
@@ -94,6 +98,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        playercollider = GetComponent<BoxCollider2D>();
     }
 
     void Update()
@@ -141,6 +146,14 @@ public class PlayerController : MonoBehaviour
             DashDirection = 0;
         }
 
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            if(currentPlatform != null)
+            {
+                StartCoroutine(DisableCollision());
+            }
+        }
+
         if (Input.GetButton("Jump") && grounded){ // this is still done with old input system
             Body.velocity = new Vector2(Body.velocity.x, jumpSpeed);
             animator.SetBool("isJumping", !grounded);
@@ -184,8 +197,29 @@ public class PlayerController : MonoBehaviour
             transform.localScale = ls;
         }
     }
+    private IEnumerator DisableCollision()
+    {
+        BoxCollider2D platformcollider = currentPlatform.GetComponent<BoxCollider2D>();
+        Physics2D.IgnoreCollision(playercollider, platformcollider); // ignore this collision
+        yield return new WaitForSeconds(0.25f); // waits for the player to fall through the platform
+        Physics2D.IgnoreCollision(playercollider, platformcollider, false); // dont ignore this collision anymore
+    }
     #endregion
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            currentPlatform = collision.gameObject;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            currentPlatform = collision.gameObject;
+        }
+    }
     #region action functions
     private void Fire(InputAction.CallbackContext context)
     {
