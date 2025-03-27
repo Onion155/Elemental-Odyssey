@@ -146,7 +146,7 @@ public class PlayerController : MonoBehaviour
             DashDirection = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (moveDirection.y < 0)// trying to go down
         {
             if(currentPlatform != null)
             {
@@ -154,7 +154,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetButton("Jump") && grounded){ // this is still done with old input system
+        if (moveDirection.y > 0 && grounded){ // jumping
             Body.velocity = new Vector2(Body.velocity.x, jumpSpeed);
             animator.SetBool("isJumping", !grounded);
         }
@@ -201,21 +201,21 @@ public class PlayerController : MonoBehaviour
     {
         BoxCollider2D platformcollider = currentPlatform.GetComponent<BoxCollider2D>();
         Physics2D.IgnoreCollision(playercollider, platformcollider); // ignore this collision
-        yield return new WaitForSeconds(0.25f); // waits for the player to fall through the platform
+        yield return new WaitForSeconds(0.5f); // waits for the player to fall through the platform
         Physics2D.IgnoreCollision(playercollider, platformcollider, false); // dont ignore this collision anymore
     }
     #endregion
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Platform"))
+        if (collision.gameObject.CompareTag("Rooms"))
         {
             currentPlatform = collision.gameObject;
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Platform"))
+        if (collision.gameObject.CompareTag("Rooms"))
         {
             currentPlatform = collision.gameObject;
         }
