@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.273, y: 0.437, z: -0.023580566}
-  m_LocalScale: {x: 2.78, y: 2.78, z: 2.78}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7663696635709043193}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7344918247692714317, guid: 9a67065bccb55a44db4827c67b545ed0, type: 3}
+  m_Sprite: {fileID: -476230590265473986, guid: 219d12e953b40b6458ae3e9db5198249, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -157,13 +157,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.3, y: 0.2}
+    oldSize: {x: 0.875, y: 0.65625}
     newSize: {x: 0.3, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.3, y: 0.2}
+  m_Size: {x: 0.6, y: 0.73}
   m_EdgeRadius: 0
 --- !u!114 &8128416600723480983
 MonoBehaviour:
@@ -271,7 +271,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 2
+  m_Radius: 2.3
 --- !u!114 &2630515616325606816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,7 +385,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.51
+  m_Radius: 1.49
 --- !u!114 &6381639997044354295
 MonoBehaviour:
   m_ObjectHideFlags: 0
