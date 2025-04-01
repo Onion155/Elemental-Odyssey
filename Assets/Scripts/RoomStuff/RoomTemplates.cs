@@ -9,6 +9,8 @@ public class RoomTemplates : MonoBehaviour
 
     public GameObject[] innerSections;
 
+    public GameObject[] SpecialInnerSections;
+
     public GameObject closedRoom;
 }
 

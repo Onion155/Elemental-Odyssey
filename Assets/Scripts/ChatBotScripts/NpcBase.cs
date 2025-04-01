@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NpcBase : MonoBehaviour
 {
-    [Header ("Referances")]
+    
     public GameObject ChatBoxOBJ;
     public LocalChatbotOllama AiScript;
 
@@ -14,7 +14,15 @@ public class NpcBase : MonoBehaviour
     [Header ("Charactacter attributes")]
     [TextArea(3, 10)] // Minimum of 3 lines and maximum of 10 lines
     public string Context = "";
-    
+
+    private void Start()
+    {
+        ChatBoxOBJ = GameObject.Find("ChatBox");
+        Debug.Log(ChatBoxOBJ);
+        AiScript = ChatBoxOBJ.transform.GetChild(1).gameObject.GetComponent<LocalChatbotOllama>();
+        Invoke("CloseChatBox", 0.5f);
+    }
+
     private void ActivateChatBot()
     {
         // if this is active the player should not be able to move
@@ -31,5 +39,10 @@ public class NpcBase : MonoBehaviour
         {
             ActivateChatBot();
         }
+    }
+
+    private void CloseChatBox()
+    {
+        ChatBoxOBJ.SetActive(false);
     }
 }
