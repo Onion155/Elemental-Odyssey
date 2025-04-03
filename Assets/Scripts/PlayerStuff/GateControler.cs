@@ -3,29 +3,12 @@ using UnityEngine;
 
 public class GateControler : MonoBehaviour
 {
-    // referances 
-    public Rigidbody2D Player; // player who will be tpd
-    public BoxCollider2D GateToo; // gate it will tp to
-
-    private float spawnlocation = 0.5f;
-    public bool rightside;
-   
-
-    private void Start()
-    {
-        if (rightside)
-        {
-            spawnlocation = -spawnlocation;
-        }
-    }
+    // this should teleport the player to the next room or to the boss roo
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Player.transform.position = new Vector2(GateToo.transform.position.x + spawnlocation, GateToo.transform.position.y);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // teleports player 
+        }
     }
 }

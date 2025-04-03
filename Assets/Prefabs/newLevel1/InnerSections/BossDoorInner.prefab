@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5115742638812373802}
   - component: {fileID: 8491954481011252194}
   - component: {fileID: 8394851264920840470}
+  - component: {fileID: 8881900584917481520}
   m_Layer: 0
   m_Name: BossDoor
   m_TagString: Untagged
@@ -109,6 +110,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8881900584917481520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024816892637907992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b227062ffaa4941864b34902db86bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  GateToo: {fileID: 0}
+  rightside: 0
 --- !u!1 &1244267616733972646
 GameObject:
   m_ObjectHideFlags: 0
