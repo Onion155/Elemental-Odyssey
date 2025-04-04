@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: World_tilesetv4.0_28
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -799574434, guid: 83f8cf97c4fbd4544ac13fc796d07a4d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.48235294, g: 0.6117647, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0
