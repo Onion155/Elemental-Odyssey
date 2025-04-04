@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\Elements\ConcreteElementStates\AirState.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\CharacterStatBase.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerManaDisplay.cs" />
+    <Compile Include="Assets\PlayerSpawnControler.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\Abilities\WaterWall.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\Abilities\WaterSpiritAbility.cs" />
     <Compile Include="Assets\Scripts\PlayerStuff\PlayerStatemachines\ElementalStateMachine.cs" />
