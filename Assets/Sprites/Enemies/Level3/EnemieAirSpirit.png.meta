@@ -125,10 +125,10 @@ TextureImporter:
       name: EnemieAirSpirit_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 0
-        width: 25
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: EnemieAirSpirit_1
       rect:
         serializedVersion: 2
-        x: 36
+        x: 32
         y: 0
-        width: 25
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +169,10 @@ TextureImporter:
       name: EnemieAirSpirit_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 64
         y: 0
-        width: 25
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: EnemieAirSpirit_3
       rect:
         serializedVersion: 2
-        x: 100
+        x: 96
         y: 0
-        width: 25
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 594cd66ed2cb6564b9c0cce6e65dffa6
     internalID: 0
     vertices: []
     indices: 

@@ -35,7 +35,12 @@ public class CharacterStatBase : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        amount -= defenece;
+        if(amount < defenece)
+        {
+            amount = 0;
+        }
+        else { amount -= defenece; }
+
         CurrentHeath -= amount;
        
         if (CurrentHeath <= 0)
@@ -43,7 +48,7 @@ public class CharacterStatBase : MonoBehaviour
             CurrentHeath = 0;
             Debug.Log(gameObject.name +  " died");
         }
-        healthDisplay.SetValue(CurrentHeath);
+            healthDisplay.SetValue(CurrentHeath);
     }
 
     public void Heal(int amount)

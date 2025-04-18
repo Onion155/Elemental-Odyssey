@@ -4,14 +4,11 @@ public class EnemyAggroCheck : MonoBehaviour
 {
     public GameObject PlayerTarget { get; set; } // the player
 
-    private Enemy _enemy; // the parent object to access SetAggroedStatus
+    private EnemyBase _enemy; // the parent object to access SetAggroedStatus
 
     private void Awake()
     {
-        _enemy = GetComponentInParent<Enemy>();
-
-
-        SetPlayer();
+        _enemy = GetComponentInParent<EnemyBase>();
         // P.S. it does not give a error when the player is not found through the tag like normal
 
     }
@@ -19,7 +16,7 @@ public class EnemyAggroCheck : MonoBehaviour
     // sets the aggro status to true or false based on if the player is in the raduis or not
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == PlayerTarget)
+        if (collision.gameObject.CompareTag("Player"))
         {
             _enemy.SetAggroedStatus(true);
         }
@@ -27,14 +24,9 @@ public class EnemyAggroCheck : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject == PlayerTarget)
+        if (collision.gameObject.CompareTag("Player"))
         {
             _enemy.SetAggroedStatus(false);
         }
-    }
-
-    private void SetPlayer()
-    {
-        PlayerTarget = GameObject.FindGameObjectWithTag("Player");
     }
 }

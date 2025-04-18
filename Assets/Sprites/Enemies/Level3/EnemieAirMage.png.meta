@@ -122,10 +122,10 @@ TextureImporter:
       name: EnemieAirMage_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1
-        width: 98
-        height: 106
+        x: 9
+        y: 2
+        width: 96
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,10 +144,10 @@ TextureImporter:
       name: EnemieAirMage_1
       rect:
         serializedVersion: 2
-        x: 115
-        y: 9
-        width: 98
-        height: 106
+        x: 116
+        y: 10
+        width: 96
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: EnemieAirMage_2
       rect:
         serializedVersion: 2
-        x: 222
-        y: 1
-        width: 98
-        height: 106
+        x: 223
+        y: 2
+        width: 96
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: db12268edcdbdd24cad67aed85ad8ffe
     internalID: 0
     vertices: []
     indices: 

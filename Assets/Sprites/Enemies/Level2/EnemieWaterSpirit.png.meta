@@ -137,10 +137,10 @@ TextureImporter:
       name: EnemieWaterSpirit_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 10
-        width: 23
-        height: 22
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,10 +159,10 @@ TextureImporter:
       name: EnemieWaterSpirit_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 8
-        width: 23
-        height: 24
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: EnemieWaterSpirit_2
       rect:
         serializedVersion: 2
-        x: 69
-        y: 2
-        width: 23
-        height: 30
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,9 +203,9 @@ TextureImporter:
       name: EnemieWaterSpirit_3
       rect:
         serializedVersion: 2
-        x: 101
+        x: 96
         y: 0
-        width: 23
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -225,9 +225,9 @@ TextureImporter:
       name: EnemieWaterSpirit_4
       rect:
         serializedVersion: 2
-        x: 133
+        x: 128
         y: 0
-        width: 23
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -247,9 +247,9 @@ TextureImporter:
       name: EnemieWaterSpirit_5
       rect:
         serializedVersion: 2
-        x: 165
+        x: 160
         y: 0
-        width: 23
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -269,9 +269,9 @@ TextureImporter:
       name: EnemieWaterSpirit_6
       rect:
         serializedVersion: 2
-        x: 197
+        x: 192
         y: 0
-        width: 23
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -291,9 +291,9 @@ TextureImporter:
       name: EnemieWaterSpirit_7
       rect:
         serializedVersion: 2
-        x: 229
+        x: 224
         y: 0
-        width: 23
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d2940613b6411ed4ab19a2c77015fbc7
     internalID: 0
     vertices: []
     indices: 

@@ -123,9 +123,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 9
-        width: 33
-        height: 21
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,10 +144,10 @@ TextureImporter:
       name: EnemieFlyingFish_1
       rect:
         serializedVersion: 2
-        x: 31
-        y: 10
-        width: 34
-        height: 17
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: EnemieFlyingFish_2
       rect:
         serializedVersion: 2
-        x: 63
-        y: 9
-        width: 129
-        height: 18
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,11 +184,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: EnemieFlyingFish_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f18078b5e4ebe4db44651ac84c9171
+      internalID: 650589990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemieFlyingFish_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42734bc1547d5144cb78b86a9616a2e8
+      internalID: 1992897796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemieFlyingFish_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c931c96f3bd21e4390d5aaaf8049838
+      internalID: -1199741927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ca05f163afc2277418491098b7e28d16
     internalID: 0
     vertices: []
     indices: 
@@ -199,6 +265,9 @@ TextureImporter:
       EnemieFlyingFish_0: 1813399436645236559
       EnemieFlyingFish_1: -8649560343112482702
       EnemieFlyingFish_2: 94805199586774772
+      EnemieFlyingFish_3: 650589990
+      EnemieFlyingFish_4: 1992897796
+      EnemieFlyingFish_5: -1199741927
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
